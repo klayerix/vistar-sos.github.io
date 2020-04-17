@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Создание карты с местоположением пользователя</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!--
-        Укажите свой API-ключ. Тестовый ключ НЕ БУДЕТ работать на других сайтах.
-        Получить ключ можно в Кабинете разработчика: https://developer.tech.yandex.ru/keys/
-    -->
-    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=aac4cdc3-9000-4465-bc8d-7da67dea378d"></script>
-    <script src="script.js"></script>
-    <div id="map"></div>
-	<style>
-        html, body, #map {
-            width: 100%; height: 100%; padding: 0; margin: 0;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
 </head>
 <body>
-<div id="map"></div>
+    
+    <input id="log" type="text">
+    <button id="signIn">Войти</button>
+    <button id="reg">Регистрация</button>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?167"></script>
+<script type="text/javascript">
+  VK.init({apiId: API_ID});
+</script>
+
+<!-- VK Widget -->
+<div id="vk_auth"></div>
+<script type="text/javascript">
+  VK.Widgets.Auth("vk_auth", {"onAuth":function(data) {alert('user '+data['uid']+' authorized');}});
+</script>
 </body>
 </html>
-
-
-
-
-
-
