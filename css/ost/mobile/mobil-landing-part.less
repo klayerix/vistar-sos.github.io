@@ -1,0 +1,257 @@
+//классы для меню зафиксированного под мобилку 
+.header-cont.mobile-fix {
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    height: 81px;
+
+    .header {
+        color: #1b1045;
+
+        .header-menu-container {
+            display: none;
+        }
+
+        .header_call {
+            height: 81px;
+            margin-top: 0;
+
+            .communications {
+                .header-icons {
+                    filter: none;
+                }
+
+                .header_email {
+                    display: none;
+                }
+
+                .header_phone {
+                    margin-top: 0;
+                }
+            }
+
+            .header_reqcall {
+                color: #775EC6;
+            }
+
+            .header_reqcall:hover {
+                color: #8fc9ff;
+            }
+        }
+
+        .header-logo {
+            filter: brightness(1) invert(0);
+        }
+    }
+}
+
+.devtypes-cont.mobile-fix {
+    display: none;
+}
+
+//вёрстка меню под мобилку
+@media (max-width: 1279px) and (min-width: 500px) {
+    .header-menu-container {
+        flex: auto;
+    }
+
+    .devtypes {
+        width: 100%;
+    }
+}
+
+@media (max-width: 680px) {
+    .devtypes-cont {
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 499px) {
+    .header-cont {
+        height: 130px;
+
+        .header {
+            flex-wrap: wrap;
+
+            .header-logo {
+                height: 41px;
+                margin-left: 12px;
+            }
+
+            .header-menu-container {
+                margin-top: 10px;
+                background: #574B85;
+                order: 3;
+                padding-left: 0;
+
+                .devtypes-select {
+                    margin-right: auto;
+                    margin-left: 7%;
+
+                    a {
+                        font-size: 19px;
+                    }
+                }
+
+                .header-arrow {
+                    margin-left: 25px;
+                }
+            }
+
+            .header_call {
+                margin-top: 11px;
+                height: 84px;
+                margin-left: auto;
+                margin-right: 6px;
+
+                .communications {
+                    margin-left: auto;
+
+                    .header-icons {
+                        display: none;
+                    }
+
+                    .header_email {
+                        font-size: 16px;
+                    }
+
+                    .header_phone {
+                        font-size: 20px;
+                        margin-top: 11px;
+                    }
+                }
+
+                .header_reqcall {
+                    font-size: 16px;
+                    color: #CEC1FF;
+                }
+            }
+        }
+    }
+
+    .devtypes-cont {
+        top: 130px;
+        background: #574B85;
+        height: auto;
+        padding-top: 10px;
+
+        .devtypes {
+            flex-direction: column;
+            margin-right: auto;
+
+            .devtypes-top {
+                flex-direction: column;
+                margin-right: auto;
+                width: 100%;
+            }
+
+            .devtypes-down {
+                flex-direction: column;
+                margin-right: auto;
+                width: 100%;
+            }
+
+            .devtypes-select {
+                flex-direction: column;
+                margin-right: auto;
+                margin-left: 7%;
+                margin-bottom: 10px;
+                font-weight: bold;
+            }
+
+            a {
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+//футер
+@media (max-width: 1279px) {
+    .footer-container {
+        .footer {
+            width: 100%;
+
+            .footer-top {
+                .footer-top-left {
+                    width: 45%;
+                    margin-left: 5%;
+                }
+
+                .footer-top-right {
+                    width: 50%;
+                }
+            }
+
+            .footer-down {
+                margin-left: 5%;
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: 499px) {
+    .footer-container {
+        .footer {
+            .footer-top {
+                margin-top: 20px;
+
+                .footer-top-left {
+                    .footer-top-left-job {
+                        font-size: 15px;
+                    }
+
+                    .footer-top-left-phone {
+                        font-size: 15px;
+                    }
+
+                    .footer-top-left-number {
+                        font-size: 15px;
+                    }
+
+                    .footer-top-left-order {
+                        font-size: 15px;
+                    }
+                }
+
+                .footer-top-right {
+                    .footer-top-right-watsapp {
+                        font-size: 15px;
+                    }
+
+                    .footer-top-right-number {
+                        font-size: 15px;
+                    }
+
+                    .footer-top-right-telegramm {
+                        font-size: 15px;
+                    }
+
+                    .footer-top-right-name {
+                        font-size: 15px;
+                    }
+
+                    .footer-top-right-e-mail {
+                        font-size: 15px;
+                    }
+
+                    .footer-top-right-e-mail-info {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .footer-down {
+                .footer-down-all-materials {
+                    font-size: 15px;
+                }
+
+                .footer-down-copyright {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

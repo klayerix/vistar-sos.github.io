@@ -1,0 +1,114 @@
+.landing-part-cont {
+    display: flex;
+    justify-content: center;
+    height: 758px;
+    width: 100%;
+    background-image: linear-gradient(93deg, #3023ae, #c86dd7);
+    padding-top: 123px;
+}
+
+.landing-part-cont-web {
+    display: flex;
+    justify-content: center;
+    height: 823px;
+    width: 100%;
+    background-image: linear-gradient(93deg, #3023ae, #c86dd7);
+    padding-top: 123px;
+}
+
+.landing-part {
+    height: 758px;
+    padding-top: 123px;
+    position: relative;
+    width: 1280px;
+    /* background-image: url(../img/TEST-landing-background.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.landing-part-container {
+    margin-top: 60px;
+    width: 770px;
+}
+
+.landing-part-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    width: 730px;
+    margin-left: 226px;
+    margin-top: 37px;
+}
+
+.landing-part-text{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 226px;
+    width: 603px;
+}
+
+.landing-part-text-outsource{
+    color: #fff;
+    font-size: 18px;
+    margin-left: 226px;
+    width: 603px;
+}
+
+.landing-part-circle-top {
+    display: flex;
+    flex-direction: row;
+    flex: 45%;
+    justify-content: space-around;
+}
+
+.landing-part-circle-down {
+    display: flex;
+    flex-direction: row;
+    flex: 45%;
+    justify-content: space-around;
+}
+
+.landing-part-circle{
+    height: 164px;
+    width: 164px;
+    border-radius: 164px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.landing-part-circle-title {
+    background: linear-gradient(114deg, #3023ae, #c86dd7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.landing-part-circle-title-span {
+    font-size: 36px;
+    background: linear-gradient(114deg, #3023ae, #c86dd7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.landing-part-circle p {
+    font-size: 16px;
+    color: #59546c;
+    text-align: center;
+}
+
+.landing-part-nav-text {
+    font-size: 16px;
+    text-align: left;
+    color: #ffffff;  
+    margin-left: 12.1%;
+    position: absolute;
+    top: 111px;
+    
+}

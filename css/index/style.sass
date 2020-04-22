@@ -1,0 +1,360 @@
+$fontOs: 'Oswald', sans-serif
+$textColor: #1B1045
+$parColor: #59546C
+$sectionColor: #EFEEF2
+
+
+
+.container
+    width: 906px
+    margin: 0 auto    
+
+@media (max-width: 480px)
+    .container
+        width: 95%
+
+
+
+
+
+.section
+    &-inform
+        width: 100%
+        padding-top: 190px
+        margin-top: -150px
+        background-color: #EFEEF2
+        padding-bottom: 1px
+        &__title  
+            font-size: 48px
+            max-width: 600px
+            line-height: 71px
+            font-weight: 900
+            color: $textColor        
+            font-family: $fontOs
+            font-weight: 700
+        &__subtitle
+            font-size: 36px
+            font-family: $fontOs
+            color: $textColor
+        &__graph-title
+            margin-top: 91px
+            font-weight: 500
+            font-size: 30px
+            font-family: $fontOs
+            color: $textColor
+            line-height: 44px 
+        &__requirements
+            margin-top: 16px
+            &-title
+                margin-top: 24px
+                font-family: $fontOs
+                color: $textColor
+                font-size: 30px
+                font-weight: 700
+            &-paragraph
+                margin-top: 24px
+                font-size: 20px
+                line-height: 30px
+                font-family: $fontOs
+                color: $parColor
+                font-weight: 300
+            &-skills 
+                margin-top: 24px
+                font-size: 20px   
+                color: $parColor
+                font-family: $fontOs
+                max-width: 528px
+                display: flex
+                justify-content: space-between
+                flex-wrap: wrap
+                margin-bottom: 87px
+    &-form
+        background-color: $sectionColor
+        padding-bottom: 20px
+        &__title
+            padding-top: 60px
+            font-size: 27px
+            color: $textColor
+            font-family: $fontOs
+            text-align: center
+        &__form
+            max-width: 500px
+            height: 411px
+            background: #FFFFFF
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+            border-radius: 10px
+            margin: 0 auto
+            padding-top: 44px
+            margin-top: 31px
+        &__subtitle
+            color: $textColor
+            font-family: $fontOs
+            text-align: center
+            max-width: 84%
+            margin: 0 auto
+            margin-bottom: 27px
+            font-size: 16px
+        &__input
+            margin: 0 auto
+            width: 316px
+            max-width: 84%
+            height: 37px
+            margin-bottom: 20px
+            outline: none
+            font-size: 14px
+            padding: 0 27px
+            font-family: $fontOs
+            color: #7E7E7E
+            font-weight: 300
+            height: 37px
+            display: block
+            border: none
+            box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.3)
+            border-radius: 100px
+        &__resume
+            display: flex
+            justify-content: center
+            align-items: center
+            &-clip
+                border-radius: 100%
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+                width: 34px
+                height: 34px
+                display: flex
+                justify-content: center
+                align-items: center
+            &-text
+                margin-left: 12px
+                display: flex
+                align-items: center
+                height: 34px
+                color: $textColor
+                font-size: 14px
+                font-family: $fontOs
+                a
+                    text-decoration: none
+                    color: $textColor
+                    transition: 0.1s
+                    &:hover
+                        color: lighten($textColor, 30%)
+        &__btn
+            display: block
+            color: #ffffff
+            padding: 10px 44px
+            font-family: $fontOs
+            font-size: 13px
+            margin: 0 auto
+            margin-top: 12px
+            background: linear-gradient(90deg, #3023AE -4.54%, #C86DD7 105.93%)
+            border-radius: 100px
+
+            &-clip
+                width: 34px
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 34px
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+                border-radius: 100%
+        &__footer
+            width: 268px
+            height: 28px
+            padding-top: 21px
+            font-size: 10px
+            margin: 0 auto
+            font-family: $fontOs
+            color: $parColor
+            
+
+    &-message
+        width: 100%
+        background: linear-gradient(155.55deg, #3023AE 3.36%, #C86DD7 103.19%)
+        height: 284px
+        display: flex
+        align-items: center
+        &__title
+            max-width: 809px
+            margin: 0 auto
+
+            h2
+                font-family: 'Oswald', sans-serif
+                font-style: normal
+                font-weight: 500
+                color: #ffffff
+                font-size: 30px
+                line-height: 44px
+                text-align: center
+    &-footer
+        background-color: $sectionColor
+        padding-top: 80px
+        width: 100%
+        &__block
+            display: inline-block
+        &__info
+            margin-left: 50px
+            font-family: $fontOs
+            font-size: 20px
+            color: $textColor
+            display: inline-block
+        &__number
+            width: 180px
+            &-link
+                color: $textColor
+            &-call
+                color: #775EC6
+        &__society
+            display: inline-block
+            vertical-align: top
+            font-size: 20px
+            font-family: $fontOs
+            color: $textColor
+            margin-left: 67px
+            &-item
+                margin-bottom: 22px
+    &-revievs
+        background: linear-gradient(90deg, #3023AE -4.54%, #C86DD7 105.93%)
+        text-align: center
+        color: #ffffff
+        font-size: 15px
+        
+        &__clients
+            display: flex
+            justify-content: space-around
+            padding-top: 70px
+            padding-bottom: 50px
+            &-name
+                font-size: 20px
+        &__proff
+            margin-top: 13px
+            margin-bottom: 30px   
+            font-weight: 300 
+        &__item
+            min-height: 400px
+            width: 400px
+            display: inline-block
+        &__img
+            margin-bottom: 25px
+            img
+                width: 120px
+                height: 120px
+                border-radius: 50%
+            display: flex
+            justify-content: center  
+    &-competences
+        background-color: #EFEEF2
+        &__title
+            font-family: $fontOs
+            font-size: 36px
+            color: $textColor
+            padding-left: 74px
+        &__block
+            margin-top: 24px
+            display: flex
+            justify-content: center
+            justify-content: space-beetwen
+            &-item
+                width: 148px
+                margin: 0 12px 0 12px
+                color: #6D6D6D
+                font-size: 14px
+                font-weight: normal
+                line-height: 26px
+                &-double
+                    margin-bottom: 19px
+                strong  
+                    font-size: 16px
+                    color: $textColor
+    &-portfolio
+        &__title
+            margin-top: 31px
+            margin-bottom: 103px
+        &__item
+            display: flex
+            justify-content: space-around
+            align-items: center
+            &-block
+                width: 50%
+                padding-left: 74px
+                color: $textColor
+                &-title
+                    font-size: 30px
+                    line-height: 44px
+                    margin-bottom: 23px
+                &-subtitle
+                    font-size: 20px
+                    line-height: 30px
+
+                    
+
+        
+
+
+// блок с мотивацией
+    
+
+
+@media ( max-width: 768px )
+    .section
+        &-info
+            &__title
+                font-size: 36px
+                line-height: 53px
+            &__subtitle
+                font-size: 22px
+            &__graph-title
+                margin-top: 29px
+                font-size: 17px
+            &__requirements
+                margin-top: 0
+                &-title
+                    font-size: 17px
+                &-paragraph
+                    font-size: 15px
+                    line-height: 15px
+                    margin-top: 4px
+                    margin-bottom: 28px
+                &-skills
+                    display: block
+                    margin-top: 4px
+                    margin-bottom: 34px
+                &-skills-point
+                    display: inline-block
+                    margin-right: 30px
+                    font-size: 15px
+        &-message
+            height: 146px
+            background: linear-gradient(137.55deg, #3023AE 3.36%, #C86DD7 103.19%)
+            &__title
+                text-align: center
+                display: block
+                width: auto
+                max-width: 95%
+            h2  
+                
+                font-size: 15px
+                line-height: 22px
+        &-form
+            .container
+                width: 100%
+                margin: 0
+                padding: 0
+            &__input    
+                width: 75%
+            &__title
+                font-size: 40px
+                padding-top: 26px
+                font-weight: 900
+            &__subtitle
+                max-width: 70%
+        &-revievs
+            &__clients
+                display: block
+                padding-top: 30px
+            &__item
+                width: 90%
+                padding-bottom: 30px
+                    
+.landing-part-cont::after
+    background: linear-gradient(to bottom right,transparent 49.6%,#EFEEF2 50%)!important
+
+

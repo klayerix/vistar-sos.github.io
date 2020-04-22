@@ -1,0 +1,388 @@
+.how-we-work-mobile-container-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(339deg, #5448c9, #c17aed);
+    margin-top: -76px;
+}
+
+.how-we-work-mobile-container {
+    width: 1280px;
+    height: 2259px;
+}
+
+.how-we-work-mobile-title {
+    font-family: Oswald;
+    font-size: 54px;
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 124px;
+    padding-top: 120px;
+}
+
+.how-we-work-mobile-text {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 124px;
+}
+
+.how-we-work-mobile-form-pre-project-analysis-cont {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.how-we-work-mobile-form-pre-project-analysis {
+    width: 669px;
+    height: 482px;
+    border-radius: 0 10px 10px 0;
+    background-color: #ffffff;
+    box-shadow: 0 6px 10px 0 rgba(51, 51, 51, 0.31);
+    margin-top: 45px;
+}
+
+.how-we-work-mobile-form-ppa-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: left;
+    color: #1b1045;
+    margin-left: 121px;
+    padding-top: 35px;
+}
+
+.how-we-work-mobile-form-text {
+    width: 500px;
+    height: 260px;
+    font-family: Oswald;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #59546c;
+    margin-left: 121px;
+    padding-top: 11px;
+}
+
+.how-we-work-mobile-form-text .a68 {
+    margin-left: 68px;
+}
+
+.how-we-work-mobile-form-text .a51 {
+    margin-left: 51px;
+}
+
+
+.how-we-work-mobile-form-ppa-button {
+    width: 350px;
+    height: 57px;
+    border-radius: 26px;
+    border: solid 2px transparent;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(99deg, #3023ae, #c86dd7);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 121px;
+    margin-top: 35px;
+    transition: all 0.5s ease;
+}
+
+.how-we-work-mobile-form-ppa-button-text {
+    font-size: 18px;
+    text-align: left;
+    color: #7b47c2;
+}
+
+.how-we-work-mobile-form-ppa-button:hover {
+    background-image: linear-gradient(104deg, #3023ae, #c86dd7);
+    transition: all 0.5s ease;
+}
+
+.how-we-work-mobile-form-ppa-button:hover .how-we-work-mobile-form-ppa-button-text {
+    color: #fff;
+}
+
+.how-we-work-mobile-form-ppa-button:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.how-we-work-mobile-form-ppa-button:active {
+    background-image: linear-gradient(147deg, #3023ae, #c86dd7);
+}
+
+.how-we-work-mobile-form-designing-mobile-applications {
+    width: 728px;
+    height: 452px;
+    border-radius: 10px 0 0 10px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 10px 0 rgba(51, 51, 51, 0.31);
+    margin: 0 0 0 auto;
+    margin-top: 29px;
+}
+
+.how-we-work-mobile-form-dma-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: left;
+    color: #1b1045;
+    margin-left: 68px;
+    padding-top: 20px;
+}
+
+.how-we-work-mobile-form-development-of-design-and-prototypes {
+    width: 669px;
+    height: 362px;
+    border-radius: 0 10px 10px 0;
+    background-color: #ffffff;
+    box-shadow: 0 6px 10px 0 rgba(51, 51, 51, 0.31);
+    margin-top: 40px;
+}
+
+.how-we-work-mobile-form-creating-the-code {
+    width: 685px;
+    height: 343px;
+    border-radius: 10px 0 0 10px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 10px 0 rgba(51, 51, 51, 0.31);
+    margin: 0 0 0 auto;
+    margin-top: 69px;
+}
+
+.how-we-work-mobile-form-ctc-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: left;
+    color: #1b1045;
+    margin-left: 51px;
+    padding-top: 29px;
+}
+
+.how-we-work-mobile-form-testing {
+    width: 721px;
+    height: 190px;
+    border-radius: 0 10px 10px 0;
+    background-color: #ffffff;
+    box-shadow: 0 6px 10px 0 rgba(51, 51, 51, 0.31);
+    margin-top: 56px;
+}
+
+.how-we-work-mobile-form-testing-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: left;
+    color: #1b1045;
+    margin-left: 121px;
+    padding-top: 16px;
+}
+
+.how-we-work-mobile-form-pre-project-analysis-cont {
+    display: flex;
+    align-items: center;
+}
+
+.how-we-work-mobile-form-pre-project-analysis-cont .how-we-work-mobile-art.first {
+    margin-top: 31px;
+    margin-left: 85px;
+}
+
+.how-we-work-mobile-form-designing-mobile-applications-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.how-we-work-mobile-form-development-of-design-and-prototypes-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.how-we-work-mobile-form-creating-the-code-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.mobile-terms-contaiener {
+    width: 100%;
+    height: 704px;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-terms {
+    width: 1280px;
+}
+
+.mobile-terms-title {
+    color: #1b1045;
+    font-size: 48px;
+    font-weight: bold;
+    margin-left: 98px;
+    margin-top: 41px;
+}
+
+.percentage-range-slider-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    margin-left: 109px;
+    transition: all 2s ease;
+}
+
+.percentage-range-slider {
+    width: 22px;
+    height: 387px;
+    border-radius: 0px 0px 7px 7px;
+}
+
+.percentage-range-slider-circle {
+    margin-left: 19px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.percentage-range-slider.one {
+    height: 7px;
+    background: #bb67d4;
+    margin-bottom: -7px;
+    position: relative;
+    z-index: 6;
+}
+
+.percentage-range-slider.two {
+    height: 7px;
+    background: #9957cb;
+    position: relative;
+    margin-top: -7px;
+    z-index: 5;
+}
+
+.percentage-range-slider.three {
+    height: 7px;
+    background: #8f51c8;
+    position: relative;
+    margin-top: -7px;
+    z-index: 4;
+}
+
+.percentage-range-slider.four {
+    height: 7px;
+    background: #7d49c3;
+    position: relative;
+    margin-top: -7px;
+    z-index: 3;
+}
+
+.percentage-range-slider.five {
+    height: 7px;
+    background: #683ebd;
+    position: relative;
+    margin-top: -7px;
+    z-index: 2;
+}
+
+.percentage-range-slider.six {
+    height: 62px;
+    background-color: #5133b7;
+    position: relative;
+    margin-top: -7px;
+}
+
+.percentage-range-slider-begin {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    background: url('../img/mobile-terms-time.png'), #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 20px;
+    z-index: 7;
+}
+
+.percentage-range-slider-finish {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    background: url('../img/mobile-terms-finish.png'), #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-top: -31.5px;
+    z-index: 7;
+}
+
+.mobile-terms-text-container {
+    margin-left: 168px;
+    margin-top: 72px;
+}
+
+.mobile-terms-item {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+
+.mobile-terms-item.item2 {
+    margin-top: 29px;
+}
+
+.mobile-terms-item.item3 {
+    margin-top: 43px;
+}
+
+.mobile-terms-item.item4 {
+    margin-top: 68px;
+}
+
+.mobile-terms-item.item5 {
+    margin-top: 70px;
+}
+
+.mobile-terms-item.item6 {
+    margin-top: 8px;
+}
+
+
+.mobile-terms-item-text {
+    margin-left: 15px;
+    font-size: 18px;
+    color: #1b1045;
+}
+
+.oval {
+    width: 4px;
+    height: 4px;
+    background: #1b1045;
+    border-radius: 4px;
+    align-self: center;
+}
+
+@media (min-width: 1920px) {
+
+    .how-we-work-mobile-form-pre-project-analysis,
+    .how-we-work-mobile-form-designing-mobile-applications,
+    .how-we-work-mobile-form-development-of-design-and-prototypes,
+    .how-we-work-mobile-form-creating-the-code,
+    .how-we-work-mobile-form-testing {
+        border-radius: 20px;
+    }
+}

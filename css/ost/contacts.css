@@ -1,0 +1,104 @@
+.contacts-container {
+  height: 1810px;
+  width: 100%;
+}
+
+.map {
+  width: 100%;
+  height: 457px;
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.23);
+}
+
+.contact-data-container {
+  width: 931px;
+  height: 693px;
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.31);
+  position: relative;
+  z-index: 2;
+  margin-left: 186px;
+  margin-top: -25px;
+}
+
+.contact-data-container .contact-data-title {
+  position: relative;
+  color: #1b1045;
+  font-weight: 500;
+  font-size: 40px;
+  left: 54px;
+  top: 37px;
+}
+
+.contact-data-container .contact-data-main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.contact-data-container .contact-data-main-container .contact-data-sub-conrainer {
+  margin-left: 54px;
+  margin-top: 18px;
+  position: relative;
+}
+
+.contact-data-container .contact-data-main-container .contact-data-sub-conrainer .contact-data-sub-title {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1b1045;
+}
+
+.contact-data-container .contact-data-main-container .contact-data-sub-conrainer .contact-data-text {
+  font-size: 18px;
+  color: #1b1045;
+}
+
+.contact-data-container .contact-data-main-container .contact-data-sub-conrainer .contact-data-sub-text {
+  color: #959595;
+  font-size: 18px;
+  width: 400px;
+}
+
+.contact-data-container .contact-data-main-container .contact-vertical-line {
+  width: 2px;
+  height: 427px;
+  background: #959595;
+}
+
+.contact-data-container .contact-data-main-container .contact-data-left-container {
+  margin-left: 53px;
+  align-self: flex-start;
+  margin-top: 69px;
+}
+
+.contact-data-container .contact-data-main-container .contact-data-left-container .contact-person-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.contact-data-container .contact-data-main-container .contact-data-left-container .contact-person-container img {
+  align-self: flex-start;
+  margin-top: 5px;
+}
+
+.contact-data-container .contact-data-main-container .contact-data-left-container .contact-person-container .contact-person-requisites-container {
+  margin-left: 23px;
+}
+
+.contact-data-container .contact-data-main-container .contact-data-left-container .contact-person-container .contact-person-requisites-container .contact-person-name {
+  color: #1b1045;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.contact-data-container .contact-data-main-container .contact-data-left-container .contact-person-container .contact-person-requisites-container .contact-person-position {
+  color: #959595;
+  font-size: 16px;
+}
+
+.contact-data-container .contact-data-main-container .contact-data-left-container .contact-person-container .contact-person-requisites-container .contact-person-email {
+  color: #1b1045;
+  font-size: 18px;
+}

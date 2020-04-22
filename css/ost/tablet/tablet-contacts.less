@@ -1,0 +1,146 @@
+@media (min-width: 480px) and (max-width: 1279px){
+    @main_color: #1b1045;
+
+.contacts-container {
+    height: 1810/12.8vw;
+    width: 100%;
+
+    .map {
+        width: 100%;
+        height: 457/12.8vw;
+        box-shadow: 0 2/12.8vw 9/12.8vw 0 rgba(0, 0, 0, 0.23);
+    }
+
+    .contact-data-container {
+        width: 931/12.8vw;
+        height: 57vw;
+        background: #fff;
+        border-radius: 13/12.8vw;
+        box-shadow: 0 2/12.8vw 11/12.8vw 0 rgba(0, 0, 0, 0.31);
+        position: relative;
+        z-index: 2;
+        margin-left: 186/12.8vw;
+        margin-top: -25/12.8vw;
+
+        .contact-data-title {
+            //position: relative;
+            color: @main_color;
+            font-weight: 500;
+            font-size: 40/12.8vw;
+            padding-top:37/12.8vw;
+            padding-left:54/12.8vw;
+            // left: 54/12.8vw;
+            // top: 37/12.8vw;
+        }
+
+        .contact-data-main-container {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+
+            .contact-data-sub-conrainer {
+                margin-left: 54/12.8vw;
+                margin-top: 18/12.8vw;
+                //position: relative;
+
+                .contact-data-sub-title {
+                // position: relative;
+                    font-size: 24/12.8vw;
+                    font-weight: 500;
+                    color: @main_color;
+                }
+
+                .contact-data-text {
+                    font-size: 18/12.8vw;
+                    color: @main_color;
+                }
+
+                .contact-data-sub-text {
+                    color: #959595;
+                    font-size: 18/12.8vw;
+                    width: 400/12.8vw;
+                }
+            }
+
+            .contact-vertical-line {
+                width: 2/12.8vw;
+                height: 427/12.8vw;
+                background: #959595;
+            }
+
+            .contact-data-left-container {
+                margin-left: 53/12.8vw;
+                align-self: flex-start;
+                margin-top: 69/12.8vw;
+
+                .contact-person-container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: baseline;
+
+                    img {
+                        align-self: flex-start;
+                        margin-top: 5/12.8vw;
+                    }
+
+                    .contact-person-requisites-container {
+                        margin-left: 23/12.8vw;
+
+                        .contact-person-name {
+                            color: @main_color;
+                            font-weight: 500;
+                            font-size: 18/12.8vw;
+                        }
+
+                        .contact-person-position {
+                            color: #959595;
+                            font-size: 16/12.8vw;
+                        }
+
+                        .contact-person-email {
+                            color: @main_color;
+                            font-size: 18/12.8vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .landing-part-cont-web {
+        display: flex;
+        justify-content: center;
+        height: 73.2vw;
+        width: 100%;
+        background-image: linear-gradient(93deg, #3023ae, #c86dd7);
+        padding-top: 123/12.8vw;
+
+        .landing-part {
+            height: 758/12.8vw;
+            padding-top: 123/12.8vw;
+            position: relative;
+            width: 1280/12.8vw;
+
+            .landing-part-container {
+                margin-top: 60/12.8vw;
+                width: 770/12.8vw;
+
+                .landing-part-nav-text {
+                    font-size: 16/12.8vw;
+                    text-align: left;
+                    color: #ffffff;  
+                    margin-left: 12.1%;
+                    position: absolute;
+                    top: 111/12.8vw;
+                    
+                    a{
+                        color: #ffffff; 
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+    }
+}
+}

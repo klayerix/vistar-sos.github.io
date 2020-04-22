@@ -1,0 +1,190 @@
+.software-order-part-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* для того что бы видео не заплывало на контент */
+    background-color: inherit;
+    position: relative;
+    z-index: 4;
+    /* конец */
+}
+
+.software-order-part {
+    width: 1280px;
+}
+
+.software-order-titel{
+    font-size: 48px;
+    color: #1b1045;
+    font-weight: bold;
+    margin-left: 115px;
+    height: 71px;
+}
+
+.software-order-choice {
+    margin-left: 115px;
+    color: #1b1045;
+    font-weight: 500;
+    font-size: 36px;
+    height: 53px;
+}
+
+.cooperation-option-choice{
+    height: 280px;
+    width: 272px;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px 0 rgba(77, 77, 77, 0.33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 61px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.cooperation-option-choice-circle1 {
+    width: 46px;
+    height: 46px;
+    border-radius: 46px; 
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 32px;
+    visibility: visible;
+}
+
+.cooperation-option-choice-circle2 {
+    width: 46px;
+    height: 46px;
+    border-radius: 46px; 
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 45px;
+    visibility: hidden;
+}
+
+.cooperation-option-choice-circle3 {
+    width: 46px;
+    height: 46px;
+    border-radius: 46px; 
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 64px;
+    visibility: hidden;
+}
+
+.cooperation-option-choice-circle-checkmark {
+    margin-top: 11px;
+    width: 24px;
+    height: 24px;
+}
+
+.cooperation-option-choice:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.cooperation-option-choice-title {
+    font-size: 24px;
+    color: #1b1045;
+    font-weight: 500;
+    text-align: center;
+}
+
+.cooperation-option-choice-text {
+    color: #59546c;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 31px;
+    padding-top: 28px;
+    width: 210px;
+}
+
+.cooperation-option-choice-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.soc-checkbox-question {
+    font-size: 20px;
+    color: #1b1045;
+    margin-left: 115px;
+}
+
+.software-orper-tech-task-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.software-orper-tech-task-rectangle{
+    height: 142px;
+    width: 490px;
+    border-radius: 10px;
+    color: #59546c;
+    font-size: 18px;
+    background-image: linear-gradient(90deg, #fff, #fff);
+    box-shadow: 0 2px 6px 0 rgba(58, 57, 57, 0.28);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.software-order-a-consultation-cont {
+    margin-top: 26px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 247px;
+    background-color: #efeef2;
+}
+
+.software-order-a-consultation{
+    height: 247px;
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.software-order-a-consultation-titel{
+    color: #1b1045;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.software-order-discuss-the-project-button{
+    height: 57px;
+    width: 256px;
+    border-radius: 26px;
+    background-image: linear-gradient(109deg, #3023ae, #c86dd7);
+    color: #fff;
+    font-size: 24px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.software-order-discuss-the-project-button:hover{
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.software-order-discuss-the-project-button:active {
+    background-image: linear-gradient(147deg, #3023ae, #c86dd7);
+}

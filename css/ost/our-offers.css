@@ -1,0 +1,75 @@
+.our-offers-main-triangle-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.our-offers-main-triangle {
+    border-left: 1275px solid transparent;
+    border-bottom: 120px solid #fff;
+    margin-top: -300px;
+}
+
+.our-offers-main-container-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+}
+
+.our-offers-main-container {
+    width: 1280px;
+}
+
+.our-offers-title {
+    font-family: Oswald;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: left;
+    color: #1b1045;
+    margin-left: 115px;
+    margin-top: 37px;
+    margin-bottom: 33px;
+}
+
+.our-offers-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 115px;
+    margin-right: 127px;
+}
+
+.our-offers-container-left {}
+
+.our-offers-container-right {}
+
+.our-offers-container-text {
+    font-family: Oswald;
+    font-size: 18px;
+    text-align: left;
+    color: #1b1045;
+}
+
+.our-offers-li-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 33px;
+    position: relative;
+}
+
+@media (min-width: 1600px) {
+    .our-offers-main-triangle {
+        border-left: 1610px solid transparent;
+    }
+}
+
+@media (min-width: 1920px) {
+    .our-offers-main-triangle {
+        border-left: 1915px solid transparent;
+    }
+}

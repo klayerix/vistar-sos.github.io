@@ -1,0 +1,489 @@
+.about-company-container {
+  height: 4612px;
+}
+
+.about-company-landing-part-left-block-container {
+  position: absolute;
+  left: 740px;
+  top: 731px;
+}
+
+.about-company-landing-part-left-block-container .about-company-landing-part-left-block {
+  width: 400px;
+  height: 382px;
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 2px 18px 0 rgba(53, 53, 53, 0.27);
+  position: relative;
+}
+
+.about-company-landing-part-left-block-container .about-company-landing-part-left-block .about-company-landing-part-left-block-title {
+  color: #1b1045;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  top: 23px;
+  margin-left: 31px;
+}
+
+.about-company-landing-part-left-block-container .about-company-landing-part-left-block .about-company-landing-part-left-block-list {
+  color: #1b1045;
+  line-height: 2.22;
+  font-size: 18px;
+  margin-left: 31px;
+  margin-top: 40px;
+}
+
+@media (min-width: 1920px) {
+  .about-company-landing-part-left-block-container {
+    left: 956px;
+  }
+}
+
+.about-company-result-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 597px;
+}
+
+.about-company-result-container .about-company-result {
+  width: 1280px;
+}
+
+.about-company-result-container .about-company-result .about-company-result-title {
+  margin-top: 110px;
+  margin-left: 117px;
+  font-size: 40px;
+  color: #1b1045;
+}
+
+.about-company-result-container .about-company-result .about-company-result-text {
+  color: #1b1045;
+  font-size: 18px;
+  margin-left: 117px;
+}
+
+.about-company-result-container .about-company-result .about-company-result-text span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-company-result-container .about-company-result .about-company-range-container {
+  display: flex;
+  flex-direction: row;
+  width: 1077px;
+  height: 49px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  margin-left: 102px;
+  margin-top: 47px;
+}
+
+.about-company-result-container .about-company-result .about-company-range-container .about-company-range-item-one {
+  width: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-company-result-container .about-company-result .about-company-range-container .about-company-range-item-one p {
+  color: #1b1045;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.about-company-result-container .about-company-result .about-company-range-container .about-company-range-item-two {
+  width: 218px;
+  background: #ac60d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-company-result-container .about-company-result .about-company-range-container .about-company-range-item-two p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-company-result-container .about-company-result .about-company-range-container .about-company-range-item-three {
+  width: 479px;
+  background: #8a51d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-company-result-container .about-company-result .about-company-range-container .about-company-range-item-three p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-company-result-container .about-company-result .about-company-range-container .about-company-range-item-four {
+  width: 218px;
+  background: #673ebd;
+  border-radius: 0px 100px 100px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-company-result-container .about-company-result .about-company-range-container .about-company-range-item-four p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-company-result-container .about-company-result .about-company-range-slider-text {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 6px;
+  color: #1b1045;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-company-video-container {
+  width: 100%;
+  background: #6e6e6e;
+  height: 546px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: plum;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.about-company-achievements-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-company-achievements-container .about-company-achievements {
+  width: 1280px;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-title {
+  color: #1b1045;
+  font-weight: 500;
+  font-size: 40px;
+  margin-left: 117px;
+  margin-top: 67px;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-part-in-prof-events-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 34px;
+  justify-content: center;
+  align-items: center;
+  width: 950px;
+  margin-left: 167px;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-part-in-prof-events-container .about-company-part-in-prof-events-item-container {
+  width: 310px;
+  height: 295px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 45px;
+  outline: none;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-part-in-prof-events-container .about-company-part-in-prof-events-item-container .about-company-part-in-prof-events-item {
+  width: 300px;
+  height: 285px;
+  border-radius: 12px;
+  outline: none;
+  margin-left: 25px;
+  perspective: 600px;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-part-in-prof-events-container .about-company-part-in-prof-events-item-container .about-company-part-in-prof-events-item .card {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-part-in-prof-events-container .about-company-part-in-prof-events-item-container .about-company-part-in-prof-events-item .card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-part-in-prof-events-container .about-company-part-in-prof-events-item-container .about-company-part-in-prof-events-item .card .card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  backface-visibility: hidden;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-part-in-prof-events-container .about-company-part-in-prof-events-item-container .about-company-part-in-prof-events-item .card .card__face--front {
+  background: linear-gradient(133deg, #3023ae, #c86dd7);
+  border-radius: 12px;
+  box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-part-in-prof-events-container .about-company-part-in-prof-events-item-container .about-company-part-in-prof-events-item .card .card__face--front .card__face--front-title {
+  font-size: 34px;
+  color: #fff;
+  margin-left: 56px;
+  margin-top: 52px;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-part-in-prof-events-container .about-company-part-in-prof-events-item-container .about-company-part-in-prof-events-item .card .card__face--back {
+  background: #fff;
+  transform: rotateY(180deg);
+  border-radius: 12px;
+  box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-portfolio-container {
+  width: 401px;
+  height: 373px;
+  border-radius: 12px;
+  background: url('../img/completed-project-asset-1.png') center, #fff;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.32);
+  margin-left: 185px;
+  transition: all 0.5s ease;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-portfolio-container .about-company-achievements-portfolio-title {
+  margin-left: 130px;
+  margin-top: 19px;
+  color: #1b1045;
+  font-weight: 300;
+  font-size: 34px;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-portfolio-container .about-company-achievements-portfolio-btn {
+  width: 191px;
+  height: 45px;
+  border-radius: 23px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(103deg, #3023ae, #c86dd7);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 106px;
+  margin-top: 225px;
+  transition: all 0.5s ease;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-portfolio-container .about-company-achievements-portfolio-btn p {
+  font-size: 18px;
+  color: #1b1045;
+  transition: all 0.5s ease;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-portfolio-container:hover {
+  transition: all 0.5s ease;
+  background: url('../img/completed-project-asset-1.png') center, linear-gradient(133deg, #3023ae, #c86dd7);
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-portfolio-container:hover .about-company-achievements-portfolio-title {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-portfolio-container:hover .about-company-achievements-portfolio-btn {
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-portfolio-container:hover .about-company-achievements-portfolio-btn:hover {
+  background: #fff;
+  color: #7243c0;
+  transition: all 0.5s ease;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-portfolio-container:hover .about-company-achievements-portfolio-btn:active {
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-reviews-container {
+  width: 401px;
+  height: 373px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.32);
+  margin-left: 112px;
+  transition: all 0.5s ease;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-reviews-container .about-company-achievements-reviews-title {
+  color: #1b1045;
+  font-weight: 300;
+  font-size: 34px;
+  margin-left: 154px;
+  margin-top: 18px;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-reviews-container .about-company-achievements-reviews-btn {
+  width: 191px;
+  height: 45px;
+  border-radius: 23px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(103deg, #3023ae, #c86dd7);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 106px;
+  margin-top: 225px;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-reviews-container .about-company-achievements-reviews-btn p {
+  font-size: 18px;
+  color: #1b1045;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-reviews-container:hover {
+  transition: all 0.5s ease;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+  background: linear-gradient(133deg, #3023ae, #c86dd7);
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-reviews-container:hover .about-company-achievements-reviews-title {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-reviews-container:hover .about-company-achievements-reviews-btn {
+  border: 2px solid #fff;
+  background: transparent;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-reviews-container:hover .about-company-achievements-reviews-btn p {
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-reviews-container:hover .about-company-achievements-reviews-btn:hover {
+  background: #fff;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-reviews-container:hover .about-company-achievements-reviews-btn:hover p {
+  color: #7243c0;
+  transition: all 0.5s ease;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-achievements-portfolio-and-reviews-container .about-company-achievements-reviews-container:hover .about-company-achievements-reviews-btn:active {
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-part-in-prof-events-title {
+  font-size: 34px;
+  color: #1b1045;
+  font-weight: 300;
+  margin-left: 363px;
+  margin-top: 34px;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-part-in-prof-events-title-two {
+  font-size: 34px;
+  color: #1b1045;
+  font-weight: 300;
+  margin-left: 484px;
+  margin-top: 26px;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-rewards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 29px;
+  position: relative;
+  z-index: 1;
+  width: 956px;
+  margin-left: 163px;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-rewards-container .about-company-reward {
+  width: 222px;
+  height: 272px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  outline: none;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-rewards-container .about-company-reward img {
+  transition: all 0.5s ease;
+  filter: grayscale(100%);
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-rewards-container .about-company-reward p {
+  margin-top: 25px;
+  color: #1b1045;
+  font-size: 18px;
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-rewards-container .about-company-reward:hover {
+  transition: all 0.5s ease;
+  box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.32);
+}
+
+.about-company-achievements-container .about-company-achievements .about-company-rewards-container .about-company-reward:hover img {
+  transition: all 0.5s ease;
+  filter: grayscale(0%);
+}
+
+.work-and-relax-container {
+  width: 100%;
+  height: 907px;
+  display: flex;
+  justify-content: center;
+  margin-top: -125px;
+  background: linear-gradient(122deg, #3023ae, #c86dd7);
+  clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+}
+
+.work-and-relax-container .work-and-relax {
+  width: 1280px;
+}
+
+.work-and-relax-container .work-and-relax .work-and-relax-title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 40px;
+  margin-left: 117px;
+  margin-top: 162px;
+}

@@ -1,0 +1,1012 @@
+@main_color: #1b1045;
+
+.outsource-container {
+    //height: 5225px;
+
+.landing-part-cont-web {
+    position: relative;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(93deg, #3023ae, #c86dd7);
+    padding-top: 123px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -1.5px;
+        left: 0;
+        right: 0;
+        height: 190px;
+        background: linear-gradient(to bottom right, transparent 49.6%, #fff 50%);
+    }
+
+    .landing-part {
+        height: 758px;
+        padding-top: 123px;
+        position: relative;
+        width: 1280px;
+
+        .landing-part-container {
+            margin-top: 60px;
+            width: 770px;
+
+            .landing-part-nav-text {
+                font-size: 16px;
+                text-align: left;
+                color: #ffffff;  
+                margin-left: 180px;
+                position: absolute;
+                top: 62px;
+                a {
+                    color: #ffffff; 
+                    text-decoration: underline;
+                }
+            }
+            .landing-part-title {//!
+                width: 560px;
+                font-size: 48px;
+                font-weight: bold;
+                color: #fff;
+                margin-left: 226px;
+                margin-top: 37px;
+            }
+
+            .landing-part-text {//!
+                margin-top: 32px;
+                font-size: 24px; 
+                font-weight: 500;
+                color: #fff;
+                margin-left: 226px;
+                width: 603px;
+            }
+
+            .landing-part-text-outsource {//!
+                color: #fff;
+                font-size: 18px;
+                margin-left: 226px;
+                width: 603px;
+                margin-top: 60px;
+            }
+            
+            .landing-part-outsource-circles-container {
+                .landing-part-outsource-circles-subcont-first {
+
+                }
+                .landing-part-outsource-circles-subtext-first {
+
+                }
+                .landing-part-outsource-circle.a {
+
+                }
+
+                .landing-part-outsource-circles-subcont {
+                    .landing-part-outsource-circles-subtext {
+                    }
+                    .landing-part-outsource-circle.b {
+
+                    }
+                    .landing-part-outsource-circle.c {
+
+                    }
+                    .landing-part-outsource-circle.d {
+
+                    }
+                }
+                .landing-part-circle{
+                    height: 164px;
+                    width: 164px;
+                    border-radius: 164px;
+                    background-color: #fff;
+                    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+
+.landing-part-outsource-circles-container {
+
+    .left,
+    .right {
+        display: flex;
+        flex-direction: row;
+    }
+
+    display: flex;
+    width: 1200px;
+    margin-top: 86px;
+    position: relative;
+    z-index: 2;
+
+    .landing-part-outsource-circles-subcont-first {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        .landing-part-outsource-circles-subtext-first {
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+            color: #fff;
+            width: 128px;//!
+            margin-left: 214px;
+            margin-top: -16px;
+            margin-bottom: 10px;
+        }
+
+        .landing-part-outsource-circle {
+            width: 127px;
+            height: 127px;
+            border-radius: 127px;
+            background: #fff;
+            box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.3);
+
+            &.b,
+            &.c,
+            &.d {
+                margin-left: 110px;
+            }
+
+            &.a {
+                margin-left: 220px;
+                background: url('../../img/outsource-circle-asset-1.png'), #fff;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+
+    .landing-part-outsource-circles-subcont {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        .landing-part-outsource-circles-subtext {
+            font-size: 18px;
+            font-weight: 500;
+            text-align: center;
+            color: #fff;
+            padding-left: 104px;
+            margin-bottom: 44px;
+        }
+
+        .landing-part-outsource-circle {
+            width: 127px;
+            height: 127px;
+            border-radius: 127px;
+            background: #fff;
+            box-shadow: 0 2px 13px 0 rgba(0, 0, 0, 0.3);
+
+            &.b,
+            &.c,
+            &.d {
+                margin-left: 110px;
+            }
+
+            &.a {
+                margin-left: 220px;
+                background: url('../../img/outsource-circle-asset-1.png'), #fff;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &.b {
+                background: url('../../img/outsource-circle-asset-2.png'), #fff;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &.c {
+                background: url('../../img/outsource-circle-asset-3.png'), #fff;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &.d {
+                background: url('../../img/outsource-circle-asset-4.png'), #fff;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        }
+    }
+}
+
+.service-characteristic-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .service-characteristic {
+        width: 1280px;
+        position: relative;
+
+        .service-characteristic-title {
+            color: @main_color;
+            font-weight: 500;
+            font-size: 40px;
+            margin-left: 117px;
+        }
+
+        .service-characteristic-subtext {
+            color: @main_color;
+            font-weight: 500;
+            font-size: 18px;
+            margin-top: 17px;
+            margin-left: 117px;
+        }
+
+        .service-characteristic-block-container {
+            width: 502px;
+            background: #fff;
+            box-shadow: 0 2px 9px 0 rgba(49, 49, 49, 0.25);
+            border-radius: 10px;
+            transition: all 0.5s ease;
+            margin-left: 110px;
+            cursor: pointer;
+
+            &.a{
+                .service-characteristic-block-container-text {
+                    width: 276px;
+                }
+            }
+    
+
+            .service-characteristic-block-container-title {
+                font-size: 24px;
+                color: @main_color;
+                font-weight: 500;
+                position: relative;
+                top: 17px;
+                margin-left: 26px;
+            }
+
+            .service-characteristic-block-container-text {
+                font-size: 18px;
+                color: #59546c;
+                position: relative;
+                width: 425px;//!
+                margin-top: 32px;
+                margin-left: 26px;
+            }
+
+            &.a {
+                height: 142px;
+                margin-top: 23px;
+
+                &:hover~.service-characteristic-image {
+                    background: url('../../img/service-characteristic-image-all.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transition: all 0.2s ease;
+                }
+            }
+
+            &.b {
+                height: 259px;
+                margin-top: 23px;
+
+                &:hover~.service-characteristic-image {
+                    background: url('../../img/service-characteristic-image-one.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    transition: all 0.2s ease;
+                }
+            }
+
+            &:hover {
+                box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.32);
+                transition: all 0.5s ease;
+            }
+        }
+
+        .service-characteristic-image {
+            position: relative;
+            // left: 643px;
+            height: 463px;
+            // width: 636px;
+            width: 50%;
+            background: url('../../img/service-characteristic-image-default.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            bottom: 468px;
+            // left: 630px;
+            // right: 0;
+            margin-right: 0;
+            margin-left: auto; 
+            transition: all 0.2s ease;
+            z-index: -1;
+        }
+    }
+}
+
+.outsource-price-container {
+    width: 100%;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    background: #efeef2;
+    margin-top: -498px;
+
+    .outsource-price {
+        width: 1280px;
+
+        .outsource-price-title {
+            color: @main_color;
+            font-weight: 500;
+            font-size: 32px;
+            margin-top: 93px;
+            margin-left: 117px;
+        }
+
+        .outsource-price-circles-cont {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 48px;
+
+            .outsource-price-circle {
+                width: 170px;
+                height: 170px;
+                border-radius: 170px;
+                background-color: #fff;
+                box-shadow: 0 2px 13px 0 rgba(85, 85, 85, 0.21);
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                .outsource-price-circle-title {
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-align: center;
+                    color: #1b1045;
+                }
+
+                .outsource-price-circle-text {
+                    font-size: 20px;
+                    text-align: center;
+                    color: #1b1045;
+                    margin-top: 15px;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}
+
+.outsourсe-our-offers-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .outsourсe-our-offers {
+        width: 1280px;
+
+        .outsourсe-our-offers-title {
+            font-size: 32px;
+            font-weight: 500;
+            text-align: left;
+            color: @main_color;
+            margin-top: 102px;
+            margin-left: 117px;
+        }
+
+        .outsource-our-offers-table {
+            width: 1052px;
+            //height: 520px;
+            border-radius: 17px;
+            background-color: #efeef2;
+            box-shadow: 0 4px 12px 0 rgba(92, 90, 90, 0.3);
+            margin-top: 62px;
+            margin-left: 117px;
+            display: flex;
+            justify-content: space-between;
+            position: relative; // TODO:
+            z-index: 2; // FIXME:
+            top: 20px;
+            border-radius: 17px;
+            overflow: hidden;
+            
+            li:nth-child(2) {
+                height: 104px;
+            }
+            li:nth-child(3) {
+                height: 97px;
+            }
+            li:nth-child(4) {
+                height: 71px;
+            }
+            li:nth-child(5) {
+                height: 71px;
+            }
+            li:nth-child(5) {
+                height: 97px;
+            }
+
+
+            .outsource-our-offers-table-ul-one {
+                width: 347px;
+                background-color: #efeef2;
+
+                .outsource-our-offers-table-li {
+                    padding-left: 52px;
+                    & span {
+                        width: 250px;
+                        &::before {
+                            left: -22px;
+                        }
+                    }
+                }
+
+                p {
+                    box-sizing: border-box;
+                    height: 74px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-align: left;
+                    color: #59546c;
+                    padding-left: 52px;
+                    padding-top: 30px;
+                    padding-bottom: 13px;
+                }
+
+                li:nth-child(even) {
+                    background-color: #fff;
+                }
+
+                li:nth-child(4) {
+                    height: 142px;
+                }
+            }
+
+            .outsource-our-offers-table-ul-two {
+                width: 276px;
+
+                .outsource-our-offers-table-li {
+                    span {
+                        width: 209px;
+                    }
+                }
+
+                p {
+                    box-sizing: border-box;
+                    height: 74px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-align: left;
+                    color: #59546c;
+                    background-color: #e8e7ea;
+                    padding-left: 39px;
+                    padding-top: 30px;
+                    padding-bottom: 13px;
+                }
+
+                li:nth-child(even) {
+                    background-color: #f4f4f4;
+                }
+
+                li:nth-child(5) {
+                    height: 71px;
+                    background-color: #f4f4f4;
+                }
+                li:nth-child(6) {
+                    height: 97px;
+                    background-color: #e8e7ea;
+                }
+
+            }
+
+            .outsource-our-offers-table-ul-three {
+                width: 429px;
+                background-color: #efeef2;
+                border-radius: 0 17px 0 0;
+
+                .outsource-our-offers-table-li {
+                    span {
+                        width: 276px;
+                    }
+                }
+
+                p {
+                    box-sizing: border-box;
+                    height: 74px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-align: left;
+                    color: #59546c;
+                    padding-left: 39px;
+                    padding-top: 30px;
+                    padding-bottom: 13px;
+                }
+
+                li:nth-child(even) {
+                    background-color: #fff;
+                }
+
+                li:nth-child(5) {
+                    background-color: #fff;
+                    height: 71px;
+                }
+                li:nth-child(6) {
+                    background-color: #efeef2;
+                    height: 97px;
+                }
+            }
+
+            .outsource-our-offers-table-li {
+                position: relative;
+                padding-left: 39px;
+                font-size: 16px;
+                text-align: left;
+                color: #59546c;
+                display: flex;
+                align-items: center;
+                & span {
+                    display: inline-block;
+                    position: relative;
+                    &::before {
+                        content:" ";
+                        position: absolute;
+                        display: inline-block;
+                        top: 7px;
+                        left: -17px;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 8px;
+                        opacity: 0.71;
+                        background-color: #b7acd7;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.outsource-order-free-consultation-cont {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative; // FIXME: убрать потом можно будет или пододвинуть на 125px все остальные блоки снизу
+    bottom: 125px;
+
+    .outsource-order-free-consultation {
+        width: 1280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .outsource-order-free-consultation-title {
+            font-size: 20px;
+            text-align: left;
+            color: #1b1045;
+        }
+
+        .outsource-order-free-consultation-button {
+            width: 359px;
+            height: 47px;
+            border-radius: 43px;
+            background-image: linear-gradient(97deg, #3023ae, #c86dd7);
+            box-shadow: 0 4px 7px 0 rgba(92, 92, 92, 0.33);
+            margin-top: 19px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+
+            &:hover {
+                transition: all 0.2s ease;
+                box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+            }
+
+            &:active {
+                background-image: linear-gradient(147deg, #3023ae, #c86dd7);
+            }
+
+            .outsource-order-free-consultation-button-text {
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                color: #ffffff;
+                padding-top: 7px;
+            }
+        }
+    }
+}
+
+.outsource-pay-model-cont {
+    width: 100%;
+    height: 622px;
+    background-color: #efeef2;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 125px;
+
+    .outsource-pay-model {
+        width: 1280px;
+
+        .outsource-pay-model-title {
+            font-size: 40px;
+            font-weight: 500;
+            text-align: left;
+            color: #1b1045;
+            margin-left: 117px;
+            margin-top: 47px;
+        }
+
+        .outsource-pay-model-forms-cont {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 34px;
+
+            .outsource-pay-model-form {
+                box-sizing: border-box;//!
+                width: 447px;
+                height: 425px;
+                border-radius: 10px;
+                background-color: #ffffff;
+                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.21);
+                transition: all 0.5s ease;
+                padding-right: 56px;//!
+
+                &:hover {
+                    box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.28);
+                    transition: all 0.5s ease;
+                }
+
+                .outsource-pay-model-form-title {
+                    font-size: 32px;
+                    font-weight: 500;
+                    text-align: left;
+                    color: #1b1045;
+                    margin-left: 32px;
+                    margin-top: 18px;
+                }
+
+                .outsource-pay-model-form-subtitle {
+                    font-size: 20px;
+                    text-align: left;
+                    color: #5f5f60;
+                    margin-left: 32px;
+                }
+
+                .outsource-pay-model-form-ul {
+                    margin-top: 29px;
+                    margin-left: 31px;
+
+                    .outsource-pay-model-form-li {
+                        position: relative;
+                        font-size: 18px;
+                        line-height: 1.83;
+                        text-align: left;
+                        color: #59546c;
+                        padding-left: 26px;
+                        &::before {//!
+                            content: '•';
+                            position: absolute;
+                            display: inline-block;
+                            top: 0;
+                            left: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.outsource-adv-and-risks-cont {
+    width: 100%;
+    height: 919px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 125px;
+    margin-bottom: -125px;
+
+    .outsource-adv-and-risks {
+        width: 1280px;
+
+        .outsource-adv-and-risks-title {
+            font-size: 40px;
+            font-weight: 500;
+            text-align: left;
+            color: #1b1045;
+            margin-top: 53px;
+            margin-left: 117px;
+        }
+
+        .outsource-adv-and-risks-subtitle {
+            width: 578px;
+            font-size: 18px;
+            text-align: left;
+            color: #1b1045;
+            margin-top: 20px;
+            margin-left: 117px;
+        }
+
+        .outsource-adv-and-risks-forms-cont {
+            display: flex;
+            flex-direction: column;
+            margin-top: 7px;
+            margin-left: 108px;
+
+            .outsource-adv-and-risks-form {
+                width: 1052px;
+                height: 163px;
+                border-radius: 10px;
+                background-color: #fff;
+                box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.19);
+                margin-top: 29px;
+
+                .outsource-adv-and-risks-form-circle-up {
+                    width: 58px;
+                    height: 58px;
+                    border-radius: 58px;
+                    background-color: #ce85fa;
+                    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.3);
+                    position: absolute;
+                    margin-top: 42px;
+                    margin-left: -22px;
+
+                    .outsource-adv-and-risks-form-circle-up-text {
+                        font-size: 80px;
+                        font-weight: 200;
+                        text-align: center;
+                        color: #fff;
+                        margin-top: -32px;
+                        line-height: 1.5;
+                    }
+                }
+
+                .outsource-adv-and-risks-form-text-up {
+                    padding-right: 44px;
+                    font-size: 18px;
+                    line-height: 1.61;
+                    text-align: left;
+                    color: #59546c;
+                    margin-left: 126px;
+                    margin-top: 24px;
+                }
+
+                .outsource-adv-and-risks-form-circle-down {
+                    width: 58px;
+                    height: 58px;
+                    border-radius: 58px;
+                    background-color: #9a7bf5;
+                    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.3);
+                    position: absolute;
+                    margin-top: 46px;
+                    margin-left: -22px;
+
+                    .outsource-adv-and-risks-form-circle-down-text {
+                        font-size: 80px;
+                        font-weight: 200;
+                        text-align: center;
+                        color: #fff;
+                        margin-top: -42px;
+                        line-height: 1.6;
+                    }
+                }
+
+                .outsource-adv-and-risks-form-text-down {
+                    padding-right: 44px;
+                    font-size: 18px;
+                    line-height: 1.61;
+                    text-align: left;
+                    color: #59546c;
+                    margin-left: 126px;
+                    margin-top: 28px;
+                }
+            }
+        }
+
+        .outsource-adv-and-risks-down-title {
+            font-size: 32px;
+            font-weight: 500;
+            text-align: left;
+            color: #1b1045;
+            margin-top: 37px;
+            margin-left: 503px;
+        }
+
+        .outsource-adv-and-risks-down-subtitle {
+            width: 690px;
+            font-size: 18px;
+            text-align: left;
+            color: #59546c;
+            margin-top: 30px;
+            margin-left: 309px;
+
+            p:last-child {
+                margin-top: 27px;
+            }
+        }
+    }
+}
+
+.choice-us-container {
+    width: 100%;
+    height: 778px;
+    background-image: linear-gradient(258deg, #3023ae, #c86dd7);
+    clip-path: polygon(0% 0%, 100% 20%, 100% 100%, 0% 100%);
+    transform: rotateY(180deg);
+    position: relative;
+    bottom: 161px;
+    display: flex;
+    justify-content: center;
+
+    // &:before{
+    //     content: '';
+    //     display: block;
+    //     float: right;
+    //     shape-outside: polygon(0% 0%, 100% 0%, 100% 20%);
+    //     width: 100%;
+    //     height: 100%;
+    // }
+    .choice-us {
+        width: 1280px;
+        transform: rotateY(180deg);
+
+        .choice-us-title {
+            color: #fff;
+            font-weight: 500;
+            font-size: 40px;
+            position: relative;
+            margin-left: 117px;
+            margin-top: 224px;
+        }
+
+        .outsource-choice-us-list-container {
+            display: flex;
+            flex-direction: row;
+            margin-top: 43px;
+
+            .choice-us-left {
+                margin-left: 201px;
+
+                .choice-us-list-item {
+                    &:nth-child(1) img{
+                        position: relative; 
+                        top: 25px;
+                    }
+        
+                    &:nth-child(2) img{
+                        position: relative; 
+                        top: 18px;
+                    }
+        
+                    &:nth-child(3) img{
+                        position: relative; 
+                        top: 18px;  
+                        right: 5px;
+                    }
+        
+                    &:nth-child(4) img{
+                        position: relative; 
+                        top: 23px; 
+                        left: 3px;
+                    }
+
+                    &:nth-child(1) p {
+                        margin-left: 21px;
+                        width: 234px;
+                    }
+        
+                    &:nth-child(2) p {
+                        margin-left: 21px;
+                        width: 234px;
+                    }
+        
+                    &:nth-child(3) p {
+                        width: 209px;
+                        margin-left: 15px;
+                    }
+        
+                    &:nth-child(4) p {
+                        width: 310px;
+                        margin-left: 24px;
+                    }
+                }
+                
+                li { 
+                    &:nth-child(1) {
+                    
+                    }
+    
+                    &:nth-child(2) {
+                        margin-top: 33px;
+                    }
+    
+                    &:nth-child(3) {
+                        margin-top: 33px;
+                    }
+    
+                    &:nth-child(4) {
+                        margin-top: 33px;
+                    }
+                }
+            }
+
+            .choice-us-right {
+                margin-left: 231px;
+
+                .choice-us-list-item {
+                    &:nth-child(1) img{
+                        position: relative; 
+                        top: 18px;
+                    }
+        
+                    &:nth-child(2) img{
+                        position: relative; 
+                        top: 25px;
+                    }
+        
+                    &:nth-child(3) img{
+                        position: relative; 
+                        top: 25px; 
+                        left: 6px;
+                    }
+        
+                    &:nth-child(4) img{
+                        position: relative; 
+                        top: 25px;
+                    }
+
+                    &:nth-child(1) p {
+                        width: 270px;
+                        margin-left: 28px;
+                    }
+        
+                    &:nth-child(2) p {
+                        width: 276px;
+                        margin-left: 24px;
+                    }
+        
+                    &:nth-child(3) p {
+                        width: 200px;
+                        margin-left: 26px;
+                    }
+        
+                    &:nth-child(4) p {
+                        width: 276px;
+                        margin-left: 22px;
+                    }
+                }
+
+                li {
+                    &:nth-child(1) {
+                    
+                    }
+    
+                    &:nth-child(2) {
+                        margin-top: 15px;
+                    }
+    
+                    &:nth-child(3) {
+                        margin-top: 22px;
+                    }
+    
+                    &:nth-child(4) {
+                        margin-top: 33px;
+                    }
+                }
+            }
+        }
+
+        .choice-us-list-item {
+            color: #fff;
+            font-size: 20px;
+            display: flex;
+            align-items: baseline;
+        }
+    }
+}
+}

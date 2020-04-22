@@ -1,0 +1,216 @@
+.web-development-services-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.web-development-services {
+    width: 1280px;
+    display: flex;
+}
+
+.web-development-services-triangle-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.web-development-services-triangle {
+    border-left: 1275px solid transparent;
+    border-bottom: 300px solid #fff;
+    margin-top: -300px;
+}
+
+.outsource-triangle {
+    border-left: 1275px solid transparent;
+    border-bottom: 200px solid #fff;
+    margin-top: -300px;
+}
+
+.web-development-services-form {
+    width: 601px;
+    height: 675px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 9px 19px 0 rgba(0, 0, 0, 0.12);
+    margin-left: 57px;
+    margin-top: -328px;
+    /* margin-top: -478px; */
+    position: relative;
+    z-index: 1;
+}
+
+.web-development-services-form-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    color: #1b1045;
+    margin-left: 58px;
+    padding-top: 55px;
+    
+}
+
+.web-development-services-form-subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    color: #1b1045;
+    margin-left: 58px;
+    padding-top: 47px;
+}
+
+.web-development-services-form-li-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.web-development-services-form-li-circles {
+    width: 78px;
+    height: 78px;
+    border-radius: 78px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px 0 rgba(154, 72, 253, 0.5);
+    margin-left: 58px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+}
+
+.web-development-services-form-li-text {
+    font-size: 18px;
+    text-align: left;
+    color: #59546c;
+    margin-left: 19px;
+}
+
+.web-development-services-additional {
+    margin-left: 69px;
+    margin-top: -280px;
+}
+
+.web-development-services-additional-title {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    color: #1b1045;
+    margin-top: 174px;
+}
+
+.web-development-services-additional-text {
+    font-size: 18px;
+    text-align: left;
+    color: #59546c;
+    margin-top: 22px;
+}
+
+.web-development-services-prices-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.web-development-services-prices {
+    width: 1280px;
+}
+
+.web-development-services-prices-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    color: #1b1045;
+    margin-left: 117px;
+    margin-top: 20px;
+}
+
+.web-development-services-prices-content-cont {
+    display: flex;
+}
+
+.web-development-services-prices-content-left {}
+
+.web-development-services-content-left-text {
+    font-size: 18px;
+    text-align: left;
+    color: #59546c;
+    margin-left: 117px;
+    margin-top: 19px;
+}
+
+.web-development-services-content-left-li {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    color: #1b1045;
+    margin-left: 117px;
+    margin-top: 23px;
+}
+
+.web-development-services-prices-content-right {}
+
+.web-development-services-content-right-text {
+    font-size: 20px;
+    text-align: left;
+    color: #1b1045;
+    margin-top: 19px;
+    margin-left: 186px;
+}
+
+.web-development-services-content-right-button {
+    width: 253px;
+    height: 54px;
+    border-radius: 73px;
+    background-image: linear-gradient(121deg, #3023ae, #c86dd7);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+    margin-top: 31px;
+    margin-left: 186px;
+}
+
+.web-development-services-content-right-button-text {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    padding-top: 11px;
+}
+
+.web-development-services-content-right-info {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #616161;
+    margin-left: 186px;
+    margin-top: 29px;
+}
+
+@media (min-width: 1600px) {
+    .desktop-web-development .web-development-services-triangle-cont .web-development-services-triangle {
+        border-left: 1610px solid transparent;
+    }
+}
+
+@media (min-width: 1920px) {
+    .desktop-web-development .web-development-services-triangle-cont .web-development-services-triangle {
+        border-left: 1915px solid transparent;
+    }
+}
+
+@media (min-width: 1600px) {
+    .outsource-triangle {
+        border-left: 1610px solid transparent;
+    }
+}
+
+@media (min-width: 1920px) {
+    .outsource-triangle {
+        border-left: 1915px solid transparent;
+    }
+}

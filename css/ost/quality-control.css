@@ -1,0 +1,68 @@
+.quality-control-and-timing-container-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #efeef2;
+}
+
+.quality-control-and-timing-container {
+    display: flex;
+    flex-direction: row;
+    width: 1280px;
+    justify-content: space-between;
+}
+
+.quality-control-and-timing-left {
+    margin-left: 97px;
+    margin-top: 47px;
+}
+
+.quality-control-and-timing-left h3 {
+    font-size: 36px;
+    color: #1b1045;
+    font-weight: bold;
+    /* width: 435px; */
+    height: 53px;
+}
+
+.quality-control-and-timing-left p {
+    width: 464px;
+    height: 130px;
+    font-size: 18px;
+    color: #59546c;
+}
+
+.quality-control-and-timing-right {
+    margin-bottom: 37px;
+}
+
+.quality-control-and-timing-right-titel {
+    width: 464px;
+    height: 52px;
+    font-size: 18px;
+    color: #59546c;
+    margin-right: 137px;
+    margin-top: 57px;
+}
+
+.qc-ul-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1b1045;
+    margin-right: 137px;
+}
+
+.qc-ul-container-mobile {
+    display: none;
+    width: 464px;
+    height: 130px;
+    font-size: 18px;
+    color: #1b1045;
+}
+
+.qc-criteria-item {
+    font-weight: 500;
+    margin-top: 25px;
+}

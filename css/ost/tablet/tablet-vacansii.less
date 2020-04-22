@@ -1,0 +1,284 @@
+@media (min-width: 480px) and (max-width: 1279px){
+    .current-vacancies-container {
+        width: 100%;
+        background-color: #fff;
+        // height: 514/12.8vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+
+            .current-vacancies {
+                z-index: 2;
+                height: auto;
+                width: 906/12.8vw;
+                border-radius: 10/12.8vw;
+                box-shadow: 0 2/12.8vw 19/12.8vw 0 rgba(0, 0, 0, 0.18);
+                background-color: #ffffff;
+                margin-top: -149/12.8vw;
+
+                .current-vacancies-title {
+                    margin-left: 39/12.8vw;
+                    margin-top: 16/12.8vw;
+                    font-family: Oswald;
+                    font-size: 40/12.8vw;
+                    font-weight: 500;
+                    color: #1b1045;
+                }
+
+                .current-vacancies-all {
+                    margin-top: 32/12.8vw;
+                    box-shadow: 0 -2/12.8vw 8/12.8vw 0 rgba(0, 0, 0, 0.16);
+
+                    .current-vacancy {
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 79/12.8vw;
+                        box-shadow: 0 -2/12.8vw 9/12.8vw 0 rgba(0, 0, 0, 0.08);
+                        background-color: #ffffff;
+                        transition: all 0.5s ease;
+
+                        &.end {
+                            background-color: inherit;
+                            box-shadow: 0 rgba(0, 0, 0, 0);
+                        }
+
+                        .current-vacancy-icon {
+                            margin-left: 46/12.8vw;
+                        }
+
+                        .current-vacancy-title {
+                            margin-left: 14/12.8vw;
+                            font-size: 20/12.8vw;
+                            font-weight: 500;
+                            text-align: left;
+                            color: #1b1045;
+                        }
+
+                        .current-vacancy-arrow-container {
+                            display: flex;
+                            margin-left: auto;
+                            margin-right: 70/12.8vw;
+                            justify-content: center;
+                            align-items: center;
+                            height: 24/12.8vw;
+                            width: 24/12.8vw;
+                        }
+
+                    }
+
+                    .current-vacancy-description-container {
+                        display: none;
+
+                        &.active {
+                            display: flex;
+                        }
+
+                        .current-vacancy-description {
+                            height: 403/12.8vw;
+                            box-shadow: inset 0 2/12.8vw 4/12.8vw 0 rgba(0, 0, 0, 0.2);
+                            display: flex;
+                            width: 100%;
+
+                            .current-vacancy-description-left {
+                                width: 60%;
+                            }
+
+                            .current-vacancy-description-right {
+                                width: 40%;
+                            }
+
+                            .current-vacancy-description-title {
+                                margin-top: 28/12.8vw;
+                                margin-left: 57/12.8vw;
+                                font-family: Oswald;
+                                font-size: 18/12.8vw;
+                                font-weight: 500;
+                                text-align: left;
+                                color: #1b1045;
+
+                                &.title2 {
+                                    margin-top: 11/12.8vw;
+                                }
+                            }
+
+                            .current-vacancy-description-ul {
+                                margin-top: 6/12.8vw;
+
+                                .current-vacancy-description-li {
+                                    display: flex;
+                                    align-items: center;
+
+                                    .current-vacancy-description-li-point {
+                                        margin-left: 45/12.8vw;
+                                        width: 3/12.8vw;
+                                        height: 3/12.8vw;
+                                        border-radius: 2/12.8vw;
+                                        background-color: #59546c;
+                                    }
+
+                                    .current-vacancy-description-li-text {
+                                        margin-left: 20/12.8vw;
+                                        font-family: Oswald;
+                                        font-size: 14/12.8vw;
+                                        color: #59546c;
+                                    }
+                                }
+                            }
+
+                            .current-vacancy-description-adress {
+                                font-family: Oswald;
+                                font-size: 14/12.8vw;
+                                color: #59546c;
+                                margin-left: 58/12.8vw;
+                            }
+
+                            .current-vacancy-description-button {
+                                cursor: pointer;
+                                transition: all 0.5s ease;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-left: 58/12.8vw;
+                                margin-top: 20/12.8vw;
+                                margin-bottom: 20/12.8vw;
+                                width: 188/12.8vw;
+                                height: 37/12.8vw;
+                                border-radius: 100/12.8vw;
+                                box-shadow: 0 3/12.8vw 7/12.8vw 0 rgba(0, 0, 0, 0.26);
+                                background-image: linear-gradient(119deg, #3023ae, #c86dd7);
+
+                                .current-vacancy-description-button-text {
+                                    font-size: 18/12.8vw;
+                                    font-weight: 500;
+                                    text-align: center;
+                                    color: #ffffff;
+                                }
+
+                                &:hover {
+                                    transition: all 0.5s ease;
+                                    box-shadow: 0 2/12.8vw 2/12.8vw 0 rgba(0, 0, 0, 0.5);
+                                }
+                            }
+
+                            .current-vacancy-description-button:active {
+                                background-image: linear-gradient(147deg, #3023ae, #c86dd7);
+                            }
+                        }
+                    }
+                }
+            }
+
+        .how-to-contact-container {
+            margin-top: -130/12.8vw;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            background-color: #efeef2;
+            height: 494/12.8vw;
+
+            .how-to-contact-title {
+                margin-top: 161/12.8vw;
+                font-family: Oswald;
+                font-size: 40/12.8vw;
+                font-weight: 500;
+                text-align: left;
+                color: #1b1045;
+            }
+
+            .how-to-contact-like-a-job {
+                margin-top: 32/12.8vw;
+                width: 738/12.8vw;
+                height: 147/12.8vw;
+                border-radius: 11/12.8vw;
+                box-shadow: 0 2/12.8vw 16/12.8vw 0 rgba(0, 0, 0, 0.17);
+                background-color: #ffffff;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .how-to-contact-like-a-job-question {
+                    margin-top: 15/12.8vw;
+                    font-size: 20/12.8vw;
+                    font-weight: 500;
+                    text-align: left;
+                    color: #1b1045;
+                }
+
+                .how-to-contact-like-a-job-feedback {
+                    margin-top: 13/12.8vw;
+                    font-size: 16/12.8vw;
+                    color: #1b1045;
+
+                    .how-to-contact-like-a-job-feedbac-email {
+                        color: #9a89eb;
+                    }
+                }
+
+                .how-to-contact-like-a-job-invitation {
+                    margin-top: 13/12.8vw;
+                    font-size: 16/12.8vw;
+                    color: #59546c;
+                }
+            }
+        }
+    }
+    .landing-part-cont {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 638/12.8vw;
+        width: 100%;
+        background-image: linear-gradient(93deg, #3023ae, #c86dd7);
+        padding-top: 123/12.8vw;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 170/12.8vw;
+            background: linear-gradient(to bottom right, transparent 49.6%, #fff 50%);
+        }
+
+        .landing-part {  
+            height: 758/12.8vw;
+            padding-top: 123/12.8vw;
+            position: relative;
+            width: 1280/12.8vw;   
+
+            .landing-part-container {
+                margin-top: 60/12.8vw;
+                width: 770/12.8vw;
+
+                .landing-part-nav-text {
+                    color: #fff;
+                    margin-left: 226/12.8vw;
+                    a {
+                        color: #ffffff; 
+                        text-decoration: underline;
+                    }
+                }
+
+                .landing-part-title {
+                    font-size: 48/12.8vw;
+                    font-weight: bold;
+                    color: #fff;
+                    width: 730/12.8vw;
+                    margin-left: 226/12.8vw;
+                    margin-top: 37/12.8vw;
+                }
+
+                .landing-part-text {
+                    color: #fff;
+                    font-size: 16/12.8vw;
+                    margin-left: 226/12.8vw;
+                    width: 744/12.8vw;
+                }
+            }
+        }
+    }
+}

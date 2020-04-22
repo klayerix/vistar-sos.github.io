@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Вакансии | Компания ВИСТАР</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Актуальные вакансии для Java-разработчиков в Воронеже. Найдётся работа для всех – от студента до профи. Звоните, пишите: +7 951 551 7000, info@vistar.su">
+    <link rel="shortcut icon" href="icon/favicon.png" />
+    <link rel="stylesheet" href="css/index/index.min.css">  
+    <link rel="stylesheet" href="css/index/style.css">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(45860811, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/45860811" style="position:absolute; left:-9999px;" alt="" />
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script defer src="/https://d3js.org/d3.v5.min.js"></script>
+    <script defer src="js/min/libs/jquery-3.3.1.js"></script>
+    <script defer src="js/min/main.js"></script>
+    <script defer src="js/min/vacancy.js"></script>
+    <script defer src="js/min/main-page.js"></script>
+    <script defer src="js/min/completed-project-carousel.js"></script>
+    <script defer src="js/min/getReviews.js"></script>
+    <script defer src="js/min/our-competences.js"></script>
+    <script defer src="js/min/libs/slick.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="js/uploads.js"></script>
+    
+</head>
+
+<body>
+    <div class="up-button" onclick="scrollUp();">
+        <img src="img/up-button.png" alt="">
+    </div>
+    <div class="wrap-modal-req-call">
+        <div class="modal-req-call">
+            <span class="exit-modal-window-req-call" onclick="exitModalReqCall();">
+                <img src="img/exitModalWindowReqCall.png" alt="X">
+            </span>
+            <p class="modal-req-call-q">Ответим
+                <br>в течение 1 часа</p>
+            <p class="modal-req-call-tel">Пн – Пт с 9:00 до 18:00 (по Мск)</p>
+            <div class="modal-window-reqcall-form">
+                <input type="text" class="modal-window-reqcall-input" required>
+                <label class="modal-window-reqcall-label">Ваш номер телефона</label>
+            </div>
+            <div class="modal-window-req-call-btn">Заказать звонок</div>
+            <div class="modal-window-req-call-success">
+                <p>Ваша заявка принята</p>
+                <img src="img/index-chek-mark-succes-send.png" class="modal-window-req-call-success-img">
+            </div>
+        </div>
+    </div>
+    <header class="main-header">
+        <div class="main-header__wrap">
+            <a class="main-header__logo" href="/"></a>
+            <div class="main-header__navigation navigation navigation--single">
+                <ul class="navigation__list">
+                    <li class="navigation__item--sub-nav">
+                            <a href="/o-kompanii">О компании</a>
+                            <ul class="navigation__sub-nav">
+                                <li class="navigation__item">
+                                        <a href="/o-kompanii/kontakty">Контакты</a>                            
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="/o-kompanii/vacansii">Вакансии</a>
+                                </li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-header__navigation navigation navigation--tablet-single">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                            <a href="/o-kompanii">О компании</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/o-kompanii/kontakty">Контакты</a>                            
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/o-kompanii/vacansii">Вакансии</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navigation__contact-information contact-information">
+                    <li class="contact-information__email">info@vistar.su</li>
+                    <li class="contact-information__phone">+7 951 551 7000</li>
+                    <li class="contact-information__feedback" onclick="showModalReqCall();">Заказать звонок</li>
+            </ul>
+        </div>
+        <div class="navigation">
+            <div class="navigation__toggle"></div>
+            <ul class="navigation__list js-navigation">
+                <li class="navigation__item">
+                    <a href="/">ПО на заказ</a>
+                </li>
+                <li class="navigation__item">
+                        <a href="/mobilnaya-razrabotka">Мобильные приложения</a>
+                        <ul class="navigation__sub-nav"></ul>
+                </li>
+                <li class="navigation__item navigation__item--sub-nav">
+                        <a href="/web-razrabotka">Веб-разработка</a>
+                        <ul class="navigation__sub-nav">
+                            <li class="navigation__item">
+                                <a href="/web-razrabotka/sajty-na-zakaz">Разработка сайтов</a>
+                            </li>
+                        </ul>
+                </li>
+                <li class="navigation__item navigation__item--tablet">
+                    <a href="/web-razrabotka/sajty-na-zakaz">Разработка сайтов</a>
+                </li>
+                <li class="navigation__item">
+                        <a href="/autsorsing">Аутсорсинг</a>
+                </li>
+                <li class="navigation__item navigation__item--mobile">
+                    <a href="/o-kompanii">О компании</a>
+                </li>
+                <li class="navigation__item navigation__item--mobile">
+                    <a href="/o-kompanii/kontakty">Контакты</a>                            
+                </li>
+                <li class="navigation__item navigation__item--mobile">
+                    <a href="/o-kompanii/vacansii">Вакансии</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="vacancies">
+        <div class="landing-part-cont">
+            <div class="landing-part">
+                <div class="landing-part-container">
+                    <p class="landing-part-nav-text">
+                        <a href="/">Главная</a> /
+                        <a href="o-kompanii">О компании</a>
+                        / Вакансии</p>
+                    <h1 class="landing-part-title">Вакансии в «Вистар»</h1>
+                    <p class="landing-part-text">
+                        Мы рады, когда в команду приходят новые люди. Ведь это новые возможности для компании! Senior или Middle,
+                        Junior или Практикант – никто без дела не останется. Мы готовы учить, делиться опытом и доверять сложные
+                        задачи. Но и от вас ждём активности, саморазвития, погружения в проекты «с головой».</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="current-vacancies-container">
+        <div class="current-vacancies">
+            <div class="current-vacancies-title">Текущие вакансии</div>
+            <div class="current-vacancies-all">
+                <div class="current-vacancy" onclick="setActiveDescription(1);">
+                    <img src="img/vacansii-java-icon.png" class="current-vacancy-icon">
+                    <div class="current-vacancy-title">SENIOR JAVA DEVELOPER</div>
+                    <div class="current-vacancy-arrow-container">
+                        <img src="img/vacansii-arrow.png" class="current-vacancy-arrow item1">
+                    </div>
+                </div>
+                <div class="current-vacancy-description-container item1">
+                    <div class="current-vacancy-description">
+                        <div class="current-vacancy-description-left">
+                            <div class="current-vacancy-description-title">Требования:</div>
+                            <ul class="current-vacancy-description-ul">
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Высшее образование</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Отличное знание java</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Отличное знание javascript, web</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Знание основных java и javascript-фреймворков</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Хорошие знания в области баз данных</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Умение писать простой, понятный и эффективный код</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Знание алгоритмов и структур данных</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Знание основных паттернов проектирования</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Хорошие коммуникативные навыки</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Опыт и знание Android</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Знание других языков программирования: Ruby, Python, PHP, Scala, Groovy, C++</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Опыт управления группой разработчиков</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Опыт построения архитектуры приложений</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Английский язык – профессиональная терминология</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="current-vacancy-description-right">
+                            <div class="current-vacancy-description-title">Условия:</div>
+                            <ul class="current-vacancy-description-ul">
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Работа постоянная</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Гибкий график</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Работа в офисе работодателя</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Оформление по трудовому договору</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Отпуск</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Больничные</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Оплата обедов</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Корпоративные праздничные мероприятия</div>
+                                </li>
+                            </ul>
+                            <div class="current-vacancy-description-title title2">Офис:</div>
+                            <div class="current-vacancy-description-adress"> г. Воронеж, ул. Плехановская, 28</div>
+                            <div class="current-vacancy-description-button" onclick="scrollHowToContact();">
+                                <div class="current-vacancy-description-button-text">Откликнуться</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="current-vacancy" onclick="setActiveDescription(2);">
+                    <img src="img/vacansii-java-icon.png" class="current-vacancy-icon">
+                    <div class="current-vacancy-title">MIDDLE JAVA DEVELOPER</div>
+                    <div class="current-vacancy-arrow-container">
+                        <img src="img/vacansii-arrow.png" class="current-vacancy-arrow item2">
+                    </div>
+                </div>
+                <div class="current-vacancy-description-container item2">
+                    <div class="current-vacancy-description">
+                        <div class="current-vacancy-description-left">
+                            <div class="current-vacancy-description-title">Требования:</div>
+                            <ul class="current-vacancy-description-ul">
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Высшее образование</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Хорошее знание java</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Знание javascript</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Хорошее знание основных алгоритмов и структур данных</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Умение писать простой, понятный и эффективный код</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Опыт использования баз данных (MySQL, PostgreSQL)</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Опыт создания web-приложений</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Опыт использования систем контроля версий (git, svn) и багтрекинга</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Английский язык – профессиональная терминология</div>
+                                </li>
+                            </ul>
+                            <div class="current-vacancy-description-title">Приветствуется:</div>
+                            <ul class="current-vacancy-description-ul">
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Знание PHP</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text"> Знание С++ ,C#</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text"> Знание GWT</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text"> Знание Android</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="current-vacancy-description-right">
+                            <div class="current-vacancy-description-title">Условия:</div>
+                            <ul class="current-vacancy-description-ul">
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Работа постоянная</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Гибкий график</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Работа в офисе работодателя</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Оформление по трудовому договору</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Отпуск</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Больничные</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Оплата обедов</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Корпоративные праздничные мероприятия</div>
+                                </li>
+                            </ul>
+                            <div class="current-vacancy-description-title title2">Офис:</div>
+                            <div class="current-vacancy-description-adress"> г. Воронеж, ул. Плехановская, 28</div>
+                            <div class="current-vacancy-description-button" onclick="scrollHowToContact();">
+                                <div class="current-vacancy-description-button-text">Откликнуться</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="current-vacancy" onclick="setActiveDescription(3);">
+                    <img src="img/vacansii-java-icon.png" class="current-vacancy-icon">
+                    <div class="current-vacancy-title">JUNIOR JAVA DEVELOPER</div>
+                    <div class="current-vacancy-arrow-container">
+                        <img src="img/vacansii-arrow.png" class="current-vacancy-arrow item3">
+                    </div>
+                </div>
+
+                <div class="current-vacancy-description-container item3">
+                    <div class="current-vacancy-description">
+                        <div class="current-vacancy-description-left">
+                            <div class="current-vacancy-description-title">Требования:</div>
+                            <ul class="current-vacancy-description-ul">
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Высшее образование/ студент ВУЗа</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Знание java</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Знание javascript</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Хорошее знание основных алгоритмов и структур данных</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Умение писать простой, понятный и эффективный код</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Опыт создания web-приложений</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Английский язык – профессиональная терминология</div>
+                                </li>
+                            </ul>
+                            <div class="current-vacancy-description-title">Приветствуется:</div>
+                            <ul class="current-vacancy-description-ul">
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Знание PHP</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text"> Знание С++ ,C#</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text"> Знание Android</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="current-vacancy-description-right">
+                            <div class="current-vacancy-description-title">Условия:</div>
+                            <ul class="current-vacancy-description-ul">
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Работа постоянная</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Гибкий график</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Работа в офисе работодателя</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Оформление по трудовому договору</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Отпуск</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Больничные</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Оплата обедов</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Корпоративные праздничные мероприятия</div>
+                                </li>
+                            </ul>
+                            <div class="current-vacancy-description-title title2">Офис:</div>
+                            <div class="current-vacancy-description-adress"> г. Воронеж, ул. Плехановская, 28</div>
+                            <div class="current-vacancy-description-button" onclick="scrollHowToContact();">
+                                <div class="current-vacancy-description-button-text">Откликнуться</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="current-vacancy" onclick="setActiveDescription(6);">
+                    <img src="img/vacansii-new-kid-1.png" class="current-vacancy-icon">
+                    <div class="current-vacancy-title">Разработчик-стажер</div>
+                    <div class="current-vacancy-arrow-container">
+                        <img src="img/vacansii-arrow.png" class="current-vacancy-arrow item6">
+                    </div>
+                </div>
+
+                <div class="current-vacancy-description-container item6">
+                    <div class="current-vacancy-description">
+                        <div class="current-vacancy-description-left">
+                            <div class="current-vacancy-description-title">Требования:</div>
+                            <ul class="current-vacancy-description-ul">
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Студент ВУЗа</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Умение писать простой, понятный и эффективный код</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Знание алгоритмов и структур данных</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Английский язык – профессиональная терминология</div>
+                                </li>
+                            </ul>
+                            <div class="current-vacancy-description-title">Приветствуется:</div>
+                            <ul class="current-vacancy-description-ul">
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Знание PHP</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text"> Знание С++ ,C#</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text"> Знание Android</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="current-vacancy-description-right">
+                            <div class="current-vacancy-description-title">Условия:</div>
+                            <ul class="current-vacancy-description-ul">
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Работа постоянная</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Гибкий график</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Работа в офисе работодателя</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Оформление по трудовому договору</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Отпуск</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Больничные</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Оплата обедов</div>
+                                </li>
+                                <li class="current-vacancy-description-li">
+                                    <div class="current-vacancy-description-li-point"></div>
+                                    <div class="current-vacancy-description-li-text">Корпоративные праздничные мероприятия</div>
+                                </li>
+                            </ul>
+                            <div class="current-vacancy-description-title title2">Офис:</div>
+                            <div class="current-vacancy-description-adress"> г. Воронеж, ул. Плехановская, 28</div>
+                            <div class="current-vacancy-description-button" onclick="scrollHowToContact();">
+                                <div class="current-vacancy-description-button-text">Откликнуться</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="current-vacancy end"></div>
+            </div>
+        </div>
+    </div>
+
+
+   
+    <div class="section-inform">
+        <div class="container">
+            <div class="section-inform__title">
+                <p>
+                    Приглашаем программистов
+                    для работы в филиале в ГЕРМАНИИ
+                </p>
+            </div>
+            <div class="section-inform__subtitle">
+                <p>
+                    Java, JavaScript (Angular 2-6, React)
+                </p>
+            </div>
+            <div class="section-inform__graph-title">
+                <p>
+                    Полная занятость, полный день
+                </p>
+            </div>
+            <div class="section-inform__requirements">
+                <span class="section-inform__requirements-title">
+                    Требования:
+                </span>
+                <p class="section-inform__requirements-paragraph">
+                    - опыт работы от 4-5 лет (либо великолепное знание предмета) <br>
+                    - хорошее знание немецкого языка (потребуется проходить на нем собеседование) <br>
+                    - умение работать в команде
+                </p>
+                <span class="section-inform__requirements-title">
+                    Условия:
+                </span>
+                <p class="section-inform__requirements-paragraph">
+                    - рабочая виза в Германию (Blaue Karte) с возможностью получения вида на жительство в Германии <br>
+                    - оклад 4500 евро в месяц <br>
+                    - немецкая медицинская страховка <br>
+                    - отчисления на немецкую пенсию <br>
+                    - хороший коллектив <br>
+                    - работа на крупнейших европейских заказчиков
+                </p>
+                <span class="section-inform__requirements-title">
+                    Ключевые навыки:
+                </span>
+                <div class="section-inform__requirements-skills">
+                    <div class="section-inform__requirements-skills-point">Java</div>
+                    <div class="section-inform__requirements-skills-point">JavaScript</div>
+                    <div class="section-inform__requirements-skills-point">ООП</div>
+                    <div class="section-inform__requirements-skills-point">Немецкий язык</div>
+                    <div class="section-inform__requirements-skills-point">AngularJs</div>
+                    <div class="section-inform__requirements-skills-point">React</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="section-message">
+        <div class="container">
+            <div class="section-message__title">
+                <h2>И помните: тот кто хочет, всегда добъется своего :)
+                    не стесняйтесь! Мы заинтересованы в том, чтобы нас окружали
+                    хорошие  толковые настойчивые люди
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="desktop">
+        <div class="how-we-work-container-cont">
+            <div class="how-we-work-container">
+                <h3 class="how-we-work-titel">Как мы работаем: процессы и результаты</h3>
+    
+                <p class="how-we-work-stages-titel"><span>В рамках любой модели реализуются типовые стадии</span>
+                    (их число, очерёдность, длительность определяются выбранной моделью):</p>
+    
+                <div class="how-we-work-about-container">
+                    <ul class="how-we-work-stages">
+                        <div class="how-we-work-stage-item-container active" onclick="setActiveHowWeWorkItem(0);">
+                            <li class="how-we-work-stage-item">Что это за фирма <br> и где она расположена?</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+                        </div>
+                        <div class="how-we-work-stage-item-container" onclick="setActiveHowWeWorkItem(1);">
+                            <li class="how-we-work-stage-item">Как давно существует фирма  <br> и есть ли в ней сотрудники со <br> стажем работы более 10 лет?</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+                        </div>
+                        <div class="how-we-work-stage-item-container" onclick="setActiveHowWeWorkItem(2);">
+                            <li class="how-we-work-stage-item">Каких сотрудников мы ищем?</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+                        </div>
+                        <div class="how-we-work-stage-item-container" onclick="setActiveHowWeWorkItem(3);">
+                            <li class="how-we-work-stage-item">Кто является клиентами фирмы?</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+                        </div>
+                        <div class="how-we-work-stage-item-container" onclick="setActiveHowWeWorkItem(4);">
+                            <li class="how-we-work-stage-item">Будет ли мне доступна немецкие <br> медицина и социальный пакет?</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+    
+                        </div>
+                        <div class="how-we-work-stage-item-container" onclick="setActiveHowWeWorkItem(5);">
+                            <li class="how-we-work-stage-item">Какие условия для работы в <br> Германии?</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+    
+                        </div>
+                        <div class="how-we-work-stage-item-container" onclick="setActiveHowWeWorkItem(6);">
+                            <li class="how-we-work-stage-item">Получу ли я рабочую визу, <br> blaue Kart и вид на жительство <br> в Германии?</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+    
+                        </div>
+                        <div class="how-we-work-stage-item-container" onclick="setActiveHowWeWorkItem(7);">
+                            <li class="how-we-work-stage-item">Какие шаги надо выполнить <br> для того,  чтобы попасть <br> в вашу фирму  в Германии?</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+    
+                        </div>
+                        <div class="how-we-work-stage-item-container" onclick="setActiveHowWeWorkItem(8);">
+                            <li class="how-we-work-stage-item">Какие есть способы помощи <br> фирмы  для того, чтобы наш <br> потенциальный сотрудник <br> перебрался в ЕС?</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+    
+                        </div>
+                        <div class="how-we-work-stage-item-container" onclick="setActiveHowWeWorkItem(9);">
+                            <li class="how-we-work-stage-item">Я располагаюсь в другом городе. <br> Как мне принять участие <br> в программе?</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+    
+                        </div>
+                        <div class="how-we-work-stage-item-container" onclick="setActiveHowWeWorkItem(10);">
+                            <li class="how-we-work-stage-item">Есть ли офисы компании <br> в других странах?</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+    
+                        </div>  
+                        <div class="how-we-work-stage-item-container" onclick="setActiveHowWeWorkItem(11);">
+                            <li class="how-we-work-stage-item">Есть ли какие-то препятствия <br> на пути в ЕС?</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+    
+                        </div>                         
+                    </ul>
+                    <div class="how-we-work-about-panel-container">
+                        <div class="how-we-work-about-panel">
+                                <div class="how-we-work-item-obout">
+                                        <p>Фирма называется Enconso  и расположена она в Бад-Хомбурге, недалеко от Франкфурта-на-Майне</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <template id="stages">
+                    <div class="how-we-work-item-obout t0 active">
+                            <p>Фирма называется Enconso  и расположена она в Бад-Хомбурге, недалеко от Франкфурта-на-Майне</p>
+                    </div>
+                    <div class="how-we-work-item-obout t1 active">
+                        <p> Фирма основана в ... году. Начало работ с использованием квалифицированных российских программистов приходится на 2007 год. поэтому в фирме есть российские сотрудники (некоторые, правда, уже получили немецкое гражданство) со стажем более 12 лет</p>
+
+    
+                    </div>
+                    <div class="how-we-work-item-obout t2 active">
+                            <p>Нам нужны классные специалисты (или те, кто со временем хочет такими стать), которые владеют немецким языком (или планируют им овладеть в ближайшее время). Наличие требования к языку обусловлено тем, что наши немецкие заказчики предпочитают общаться именно на немецком.  
+                                Язык программирования не критичен - лишь бы он был востребован в Германии на постоянной основе. Но, в основном, мы принимаем на работу людей, владеющих java и javascript - в этом случае вероятность нахождения для вас проекта составляет 95%</p>
+                    </div>
+                    <div class="how-we-work-item-obout t3 active">
+                            <p>Наиболее крупные - это lufthansa, TSystems</p>
+                    </div>
+                    <div class="how-we-work-item-obout t4 active">
+                            <p>Да, конечно. Налоги в Германии не пропадают неизвестно куда, а идут на нужды жителей этой страны. Вам будет доступна немецкая медицина, по прошествии 5 лет вы получаете право и на немецкую пенсию (даже если не будете проживать в этой стране). Если у вас есть ребенок, вам полагаются выплаты на него (в районе 200 евро за каждого ребенка)</p>
+                    </div>
+                    <div class="how-we-work-item-obout t5 active">
+                        <p>Оплата труда зависит от вашей квалификации. Скорее всего в начале вы получите оклад в 4500 евро до уплаты налогов.
+                            Фирма испольует для работы принцип аутстаффинга - вы будете работать у одного из наших заказчиков, но не числиться у него в штате - бессрочный контракт заключается между вами и фирмой Enconso. Сейчас основное количество сотрудников работает в городах Ганновер, Гамбург, Саарбрюккен</p>
+                </div>
+                    <div class="how-we-work-item-obout t6 active">
+                        <p>Да. Вначале вы получаете рабочую визу на срок до полугода. За этот срок вы оформляете blaue Karte (особый вид рабочей визы для высококвалифицированных работников) и через 19 или 29 месяцев (в зависимости от знания вами немецкого языка) получаете вид на жительство в Германии. Далее выбор за вами - оставаться гражданином России или выбрать гражданство Германии</p>
+                    </div>
+                    <div class="how-we-work-item-obout t7 active">
+                        <ul>
+                            <li>Какие шаги надо выполнить для того, чтобы попасть в вашу фирму в Германии?
+                                как мы уже описывали, вам надо: быть специалистом и знать немецкий язык. Если и то и другое у вас есть - вы проводите собеседование с нашими сотрудниками и, при получении положительного от них ответа, получаете от нас контракт и готовите документы для оформления рабочей визы.</li>
+                            <li>Если какой-то из пунктов у вас требует улучшения - мы строим план по достижению вами требуемого нашими заказчиками уровня. При достижении нужных параметров вы получаете визу и начинаете собеседования с представителями заказчика. Обычно первые 4-5 интервью оказываются неудачными из-за недостаточного знания вами иностранного языка, но, в конце концов, ваш заказчик найдет вас (об этом говорит стопроцентнае нахождение контракта для  наших кандидатов). </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="how-we-work-item-obout t8 active">
+                        <p>Мы учим потенциальных кандидатов немецкому языку или советуем им  преподавателей именно в их городе.
+                            мы развиваем сотрудников в профессиональном плане
+                            мы помогаем подготовиться к интервью </p>
+                    </div>
+                    <div class="how-we-work-item-obout t9 active">
+                        <p>В этом нет никаких проблем - в настоящее время есть возможность проходить интервью и обучение удаленно, используя различные мессенджеры.</p>
+                    </div>
+                    <div class="how-we-work-item-obout t10 active">
+                        <p>Мы планируем открыть офис в Ирландии или Великобритании для тех, кто не хочет учить немецкий язык, но свободно говорит на английском</p>
+                    </div>
+                    <div class="how-we-work-item-obout t11 active">
+                        <p>Нет. только ваша личная потенциальная лень. "Тот, кто хочет - ищет способ"</p>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="section-question">
+        <div class="container">
+            <div class="section-question__block">
+                <img src="" alt="" class="section-question__block-person"><span class="section-question__block-name"></span>
+                <p class="section-question__block-profession"></p>
+                <p class="section-question__block-info"></p>
+            </div>
+            <div class="section-question__block">
+                <img src="" alt="" class="section-question__block-person"><span class="section-question__block-name"></span>
+                <p class="section-question__block-profession"></p>
+                <p class="section-question__block-info"></p>
+            </div>
+            <div class="section-question__block">
+                <img src="" alt="" class="section-question__block-person"><span class="section-question__block-name"></span>
+                <p class="section-question__block-profession"></p>
+                <p class="section-question__block-info"></p>
+            </div>
+        </div>
+    </div> -->
+    <div class="section-revievs">
+            <div class="section-revievs__clients">
+                <div class="section-revievs__item">
+                    <div class="section-revievs__img"><p><img src="img/client-1.png" alt=""></p></div>
+                    <span class="section-revievs__clients-name">Александр Новиков</span>
+                    <div class="section-revievs__proff">программист</div>
+                    <div class="section-revievs__comments">* Возможность "завести трактор" в страну с хорошем уровнем жизни <br>
+                        * Все плюсы переезда (начинаешь новую жизнь, знакомишься с новыми людьми) <br>
+                        * Фирма помогает с обучением немецкому языку в России <br>
+                        * Фирма помогает с оформлением рабочей визы (первый раз на пол года) <br>
+                        * Немецкая медицина (еще не пользовался) <br>
+                        * Можно увидеть, куда идут твои налоги (чистые улицы, транспорт ходит по расписанию и т.д.) <br>
+                        * На выходные можно сьездить/слетать в другую страну, изучить ее историю и культуру, вкусить блюда местной кухни <br>
+                        * Дополнительные премии (2 раза в год ~ по 1000 евро) <br>
+                        * Техника стоит дешевле (можно купить больше айфонов на зарплату)</div>
+                </div>
+                <div class="section-revievs__item">
+                    <div class="section-revievs__img"><img src="img/client-2.png" alt=""> </div>
+                    <span class="section-revievs__clients-name">Наурас Хаким Нассер</span>
+                    <div class="section-revievs__proff">программист</div>
+                    <div class="section-revievs__comments">Мне компания открыла новые возможности. Работа в германии большой шаг вперед. Хороший уровень жизни и спокойная атмосфера,
+                        а также хорошая оплата и интересные проекты.
+                        Самое сложное это язык но его можно покорить за один год.
+                         Были сложности с поиском квартиры, но они в прошлом. И фирма пообещала в дальнейшем помогать в этом.
+                        </div>
+                </div>
+                <div class="section-revievs__item">
+                    <div class="section-revievs__img"><img src="img/client-3.png" alt=""></div>
+                    <span class="section-revievs__clients-name">Александр Горовой</span>
+                    <div class="section-revievs__proff">программист</div>
+                    <div class="section-revievs__comments">На данный момент я работаю в компании enconso уже полтора года, все полтора года занят на проекте Deutsche Telekom как внешний сотрудник. 
+                        В силу того, что я был первым Java разработчиком, отправленным по программе сотрудничества с enconso, был ряд вещей, которые прошли не так гладко, как хотелось бы. Из минусов можно выделить:
+                        Сложности в поиске жилья. Данная задача вызывает трудности даже у многих немцев, поэтому для нового человека с посредственным немецким это может затянутся на месяц или полтора.
+                        Борьбу с немецкой бюрократией. В каждой земле есть свои особенности работы с иностранцами и узнать их зачастую получается только на месте.
+                        Обычно консультантов зовут на проекты, в которых не хватает внутренних ресурсов. Из-за этого работать приходится много и усердно, времени на чтение Пикабу не остается.
+                        С предыдущего пункта можно начать перечислять плюсы:
+                        Задачи на проектах сложные и интересные, что позволяет развиваться профессионально.
+                        В Германии очень уважительно относятся к разделению рабочего и личного времени - никто не будет заставлять Вас работать больше 8 часов, если Вам этого не хочется. А если хочется - все переработки будут оплачены.
+                        Больше зарплата. Затраты тоже становятся больше, но все равно остается гораздо больше средств.
+                        Компенсация затрат на визу и обучение немецкому языку.
+                        </div>
+                </div>
+            </div>
+    </div>
+
+
+    <div class="section-form">
+        <div class="container">
+            <div class="section-form__title">
+                <h2>Обратная связь</h2>
+            </div>
+            <div class="section-form__form">
+                <div class="section-form__subtitle">
+                    <span>
+                        Пришлите нам своё резюме и мы свяжемся с Вами в течении дня
+                    </span>
+                </div>
+                <form action="" class="section-form__form-success">
+                    <input type="text" class="section-form__input" placeholder="Ваше имя">
+                    <input type="text" class="section-form__input" placeholder="Ваш телефон">
+                    <input type="text" class="section-form__input" placeholder="Ваш e-mail">
+                    <div class="section-form__resume">
+                        <div class="section-form__resume-clip">
+                            <img src="img/clip.png" alt="">
+                        </div>
+                        <div class="section-form__resume-text">
+                            <input type="file" multiple="multiple" accept=".txt,image/*">
+                            <a href="">Прикрепить резюме</a>
+                        </div>
+                    </div>
+                    <button class="section-form__btn">Отправить</button>
+
+                </form>
+                <div class="section-form__footer">
+                    <p> Нажимая на кнопку «Отправить», вы подтверждаете, что ознакомились <br>
+                        c <a href="" style="color: #C86DD7"> условиями обработки персональных данных</a> и принимаете их</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="section-question">
+        <div class="container">
+            <div class="section-question__block">
+                <img src="" alt="" class="section-question__block-person"><span class="section-question__block-name"></span>
+                <p class="section-question__block-profession"></p>
+                <p class="section-question__block-info"></p>
+            </div>
+            <div class="section-question__block">
+                <img src="" alt="" class="section-question__block-person"><span class="section-question__block-name"></span>
+                <p class="section-question__block-profession"></p>
+                <p class="section-question__block-info"></p>
+            </div>
+            <div class="section-question__block">
+                <img src="" alt="" class="section-question__block-person"><span class="section-question__block-name"></span>
+                <p class="section-question__block-profession"></p>
+                <p class="section-question__block-info"></p>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <p class="footer-top-left-job">Мы работаем с 9:00 до 18:00 по московскому времени (понедельник-пятница)</p>
+                    <p class="footer-top-left-phone">Телефон</p>
+                    <p class="footer-top-left-number">8 951 551 70 00</p>
+                    <p class="footer-top-left-order" onclick="showModalReqCall(true);">Заказать звонок</p>
+                </div>
+                <div class="footer-top-right">
+                    <p class="footer-top-right-watsapp">WhatsApp</p>
+                    <p class="footer-top-right-number">+7 951 551 60 00</p>
+                    <p class="footer-top-right-telegramm">+7 951 551 60 00</p>
+                    <p class="footer-top-right-name">@GennadyPonomarev</p>
+                    <p class="footer-top-right-e-mail">E-mail</p>
+                    <p class="footer-top-right-e-mail-info">info@vistar.su</p>
+                </div>
+            </div>
+            <div class="footer-down">
+                <p class="footer-down-all-materials">Все материалы сайта принадлежат ООО «ВИСТАР». При использовании любой части контента необходимо указать
+                    источник.
+                </p>
+                <p class="footer-down-copyright">© ООО "Вистар", 2009-2019</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

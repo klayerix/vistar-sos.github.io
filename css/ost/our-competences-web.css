@@ -1,0 +1,215 @@
+.our-competences-web-cont {
+    width: 100%;
+    height: 625px;
+    background-color: #efeef2;
+    display: flex;
+    justify-content: center;
+    margin-top: -68px;
+}
+
+.our-competences-web {
+    width: 1280px;
+    display: flex;
+    flex-direction: row;
+}
+
+.our-competences-web-main-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    color: #1b1045;
+    margin-top: 108px;
+    margin-left: 117px;
+}
+
+.our-competences-web-main-text {
+    font-size: 18px;
+    text-align: left;
+    color: #59546c;
+    margin-top: 21px;
+    margin-left: 117px;
+}
+
+.our-competences-web-right {
+    margin-top: 108px;
+    margin-left: 100px;
+}
+
+.our-competences-web-right-titel {
+    color: #1b1045;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.our-competences-web-right-sub-titel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1b1045;
+}
+
+.our-competences-web-right-list {
+    color: #59546c;
+    font-size: 18px;
+}
+
+.tech-container {
+    width: 100%;
+    /* add height */
+    display: flex;
+    justify-content: center;
+}
+
+.tech {
+    width: 1280px;
+}
+
+.tech-titel {
+    margin-left: 117px;
+    color: #1b1045;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.tech-text {
+    margin-left: 117px;
+    font-size: 18px;
+    color: #59546c;
+    width: 1071px;
+}
+
+.about-process-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(129deg, #3023ae, #7444c0 44%, #c86dd7);
+    height: 1114px;
+    margin-top: 41px;
+}
+
+.about-process {
+    width: 1280px;
+    display: flex;
+}
+
+.about-process-title {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 117px;
+    margin-top: 40px;
+}
+
+.about-process-sub-title {
+    font-size: 18px;
+    color: #fff;
+    margin-left: 117px;
+    margin-top: 17px;
+}
+
+.about-process-circles-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 113px;
+    width: 560px;
+    align-content: flex-start;
+}
+
+.about-process-circle {
+    display: flex;
+    flex-direction: column;
+    margin-right: 64px;
+    margin-top: 42px;
+}
+
+.about-process-circle-text {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.about-process-form {
+    width: 431px;
+    height: 458px;
+    border-radius: 18px;
+    background-color: #fff;
+    box-shadow: 0 3px 11px 0 rgba(85, 85, 85, 0.23);
+    margin-left: 106px;
+    margin-top: 44px;
+}
+
+.about-process-form-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    color: #1b1045;
+    margin-left: 33px;
+    padding-top: 21px;
+}
+
+.about-process-form-text {
+    font-size: 20px;
+    text-align: left;
+    color: #1b1045;
+    margin-left: 33px;
+    padding-top: 17px;
+}
+
+.about-process-form-text-contacts {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #1b1045;
+    margin-left: 33px;
+}
+
+.about-process-form-text-link {
+    font-size: 20px;
+    text-align: left;
+    color: #775ec6;
+    text-decoration: underline;
+    margin-left: 33px;
+    cursor: pointer;
+}
+
+.about-process-form-button {
+    width: 233px;
+    height: 47px;
+    border-radius: 43px;
+    background-image: linear-gradient(101deg, #3023ae, #c86dd7);
+    margin-left: 99px;
+    margin-top: 42px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.about-process-form-button-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 7px;
+}
+
+.about-process-form-button:hover {
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.about-process-form-button:active {
+    background-image: linear-gradient(147deg, #3023ae, #c86dd7);
+}
+
+.about-process-info {
+    margin-top: 270px;
+}
+
+.about-process-info-text {
+    font-size: 18px;
+    text-align: left;
+    color: #fff;
+}

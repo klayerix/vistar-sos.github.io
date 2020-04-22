@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Oswald;
+    list-style: none;
+}
+
+.desktop {
+    height: auto;
+    background-color: #fff;
+}
+
+.desktop-mobile-development {
+    /* height: 6724px; */
+    height: auto;
+    background-color: #fff; 
+}
+
+//классы для меню зафиксированного (для веба)
+.header-cont.fix {
+    background-color: #fff;
+    height: 90px;
+
+    .header {
+        color: #1b1045;
+
+        .header-menu-container {
+            .header-link {
+                color: #1b1045;
+            }
+
+            .header-arrow {
+                filter: brightness(1) invert(1);
+            }
+        }
+
+        .header_call {
+            height: 90px;
+
+            .communications {}
+
+            .header_reqcall {
+                color: #775EC6;
+            }
+
+            .header_reqcall:hover {
+                color: #8fc9ff;
+            }
+        }
+
+        .header-logo {
+            filter: brightness(1) invert(0);
+        }
+    }
+}
+
+.devtypes-cont.fix {
+    top: 90px;
+    background-color: rgba(87, 75, 133, 0.8);
+    position: fixed;
+}
+.header-cont {
+    background-color: transparent;
+    width: 100%;
+    height: 123px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease; 
+    position: fixed;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    z-index: 10;
+    background-color: transparent;
+    width: 1280px;   
+}
+
+.header-logo{
+    display: block;
+    height: 60px; 
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    transition: all 0.5s ease;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: flex-evenly;
+    align-items: center;
+    list-style-type: none; 
+    letter-spacing: 1px;
+
+}
+
+.header_phone {
+    margin-left: 14px;
+}
+
+.header_email {
+    margin-left: 14px;
+}
+
+.header_call {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 1.4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header_reqcall {
+    font-size: 18px;
+    /* color: #8fc9ff; */
+
+    font-weight: bold;
+    margin-left: 35px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.header_reqcall:hover{
+    color: #CEC1FF;
+}
+
+.header-arrow{
+    margin-left: 5px;
+    padding-top: 5px;
+    transition: all 0.2s ease;
+}
+
+.devtypes-cont {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 42px;
+    background-color: #a591e2;
+    position: fixed;
+    top: 123px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease; 
+    z-index: 5;
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.devtypes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold; 
+    width: 1280px;  
+    /* position: fixed;
+    height: 71px;
+    margin-top: 123px;*/
+    list-style-type: none; 
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+
+    .devtypes-select {
+        a {
+            color: #fff; 
+            text-decoration: none;
+        }
+    }
+
+    .devtypes-top {
+        display: flex;
+        flex-direction: row;
+        flex: 45%;
+        justify-content: space-around;
+    }
+    
+    .devtypes-down {
+        display: flex;
+        flex-direction: row;
+        flex: 45%;
+        justify-content: space-around;
+    }
+}
+
+.devtypes-cont.scrollOnDevtypes{
+    position: fixed;
+}
+
+
+
+.devtypes-select{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+li.devtypes-select {
+    height: 70%;
+}
+
+
+.header-arrow-devtypes {
+    margin-left: 7px;
+    padding-top: 5px;
+    transition: all 0.3s ease-out;
+}
+
+.header-link {
+    text-decoration: none;
+    text-transform: none;
+    color: #fff;
+}
+
+.devtypes-link {
+    text-decoration: none;
+    text-transform: none;
+    color: #fff;
+}
+
+.devtypes-sub-link {
+    text-decoration: none;
+    text-transform: none;
+    color: #1b1045;
+}
+
+.devtypes-select:hover .header-arrow-devtypes{
+    transform: rotate(180deg);
+    transition: all 0.3s ease-out;
+}
+
+.devtypes-select:hover .header-arrow{
+    transform: rotate(180deg);
+    transition: all 0.3s ease-out;
+}
+
+.devtypes-list {
+    min-width: 175px;
+    border-radius: 0 14px 0 14px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    box-shadow: 0 2px 3px 0 rgba(65, 64, 64, 0.5);
+
+    visibility: hidden;
+
+    transform: translateY(-15%);
+    transition:
+        visibility 0s linear 500ms,
+        transform 500ms linear;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.header-menu-list {
+    top: 30px;
+}
+
+
+.devtypes-list {
+    margin-top: -0px;
+    transition: all 0.5s ease;
+}
+
+.devtypes-select:hover .devtypes-list {
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+    opacity: 1;
+    /* margin-top: -0px; */
+}
+
+
+.devtypes-list-item {
+    height: 38px;
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 38px;    white-space: nowrap;
+    background-color: #fff;
+    margin-top: -38px;
+    transition: all 0.5s ease;
+
+    &.item1 {
+        border-radius: 0 14px 0 0;
+        background-color: #fff;
+        margin-top: 2px;
+    }
+    
+    &.itemend {
+        border-radius: 0 0 0 14px;
+        background-color: #fff;
+    }
+    
+    &.itemone {
+        border-radius: 0 14px 0 14px;
+        background-color: #fff;
+        margin-top: 2px;
+    }
+}
+
+.devtypes-select:hover .devtypes-list-item {
+    transition: all 0.5s ease;
+    margin-top: 2px;
+    box-shadow: 0 2px 3px 0 rgba(65, 64, 64, 0.5);
+}
+
+.header-icons{
+    filter: brightness(0) invert(1);
+    /* transition: all 0.1s ease; */
+}
+
+.header-menu-container {
+    display: flex;
+    flex-direction: row;
+    flex: 60%;
+    max-width: 808px;
+    justify-content: flex-start;
+    padding-left: 25px;
+}
+
+.communications {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between; 
+    line-height:  1.8;
+    transition: all 0.4s ease;
+    letter-spacing: 1.2px;
+}

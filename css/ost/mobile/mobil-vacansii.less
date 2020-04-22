@@ -1,0 +1,294 @@
+@media (max-width:479px ) {
+    
+    .current-vacancies-container {
+        width: 100%;
+        background-color: #fff;
+        // height: 514/320 * 100vw;
+        font-size: 12vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        
+            .current-vacancies {
+                z-index: 2;
+                height: auto;
+                width: 906/320 * 100vw;
+                border-radius: 10/320 * 100vw;
+                box-shadow: 0 2/320 * 100vw 19/320 * 100vw 0 rgba(0, 0, 0, 0.18);
+                background-color: #ffffff;
+                margin-top: -149/320 * 100vw;
+        
+                .current-vacancies-title {
+                    margin-left: 14/320 * 100vw;
+                    margin-top: 16/320 * 100vw;
+                    font-family: Oswald;
+                    font-size: 40/320 * 100vw;
+                    font-weight: 500;
+                    color: #1b1045;
+                }
+        
+                .current-vacancies-all {
+                    margin-top: 32/320 * 100vw;
+                    box-shadow: 0 -2/320 * 100vw 8/320 * 100vw 0 rgba(0, 0, 0, 0.16);
+        
+                    .current-vacancy {
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        height: 42/320 * 100vw;
+                        box-shadow: 0 -2/320 * 100vw 9/320 * 100vw 0 rgba(0, 0, 0, 0.08);
+                        background-color: #ffffff;
+                        transition: all 0.5s ease;
+        
+                        &.end {
+                            background-color: inherit;
+                            box-shadow: 0 rgba(0, 0, 0, 0);
+                        }
+        
+                        .current-vacancy-icon {
+                            margin-left: 12/320 * 100vw;
+                        }
+        
+                        .current-vacancy-title {
+                            margin-left: 11/320 * 100vw;
+                            font-size: 16/320 * 100vw;
+                            font-weight: 500;
+                            text-align: left;
+                            color: #1b1045;
+                        }
+        
+                        .current-vacancy-arrow-container {
+                            display: flex;
+                            margin-left: auto;
+                            margin-right: 6/320 * 100vw;
+                            justify-content: center;
+                            align-items: center;
+                            height: 24/320 * 100vw;
+                            width: 24/320 * 100vw;
+                        }
+        
+                    }
+        
+                    .current-vacancy-description-container {
+                        display: none;
+        
+                        &.active {
+                            display: flex;
+                        }
+        
+                        .current-vacancy-description {
+                            height: auto;
+                            box-shadow: inset 0 2/320 * 100vw 4/320 * 100vw 0 rgba(0, 0, 0, 0.2);
+                            display: flex;
+                            width: 100%;
+                            flex-direction: column;
+        
+                            .current-vacancy-description-left {
+                                width: auto;
+                                margin-right: 26/320 * 100vw;
+                            }
+        
+                            .current-vacancy-description-right {
+                                width: auto;
+                            }
+        
+                            .current-vacancy-description-title {
+                                margin-top: 17/320 * 100vw;
+                                margin-left: 19/320 * 100vw;
+                                font-family: Oswald;
+                                font-size: 18/320 * 100vw;
+                                font-weight: 500;
+                                text-align: left;
+                                color: #1b1045;
+        
+                                &.title2 {
+                                    margin-top: 11/320 * 100vw;
+                                }
+                            }
+        
+                            .current-vacancy-description-ul {
+                                margin-top: 6/320 * 100vw;
+        
+                                .current-vacancy-description-li {
+                                    display: flex;
+                                    align-items: center;
+        
+                                    .current-vacancy-description-li-point {
+                                        margin-left: 18/320 * 100vw;
+                                        width: 3/320 * 100vw;
+                                        height: 3/320 * 100vw;
+                                        border-radius: 2/320 * 100vw;
+                                        background-color: #59546c;
+                                    }
+        
+                                    .current-vacancy-description-li-text {
+                                        margin-left: 10/320 * 100vw;
+                                        font-family: Oswald;
+                                        font-size: 14/320 * 100vw;
+                                        color: #59546c;
+                                    }
+                                }
+                            }
+        
+                            .current-vacancy-description-adress {
+                                font-family: Oswald;
+                                font-size: 14/320 * 100vw;
+                                color: #59546c;
+                                margin-left: 18/320 * 100vw;
+                            }
+        
+                            .current-vacancy-description-button {
+                                cursor: pointer;
+                                transition: all 0.5s ease;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-left: 58/320 * 100vw;
+                                margin-top: 20/320 * 100vw;
+                                margin-bottom: 20/320 * 100vw;
+                                width: 188/320 * 100vw;
+                                height: 37/320 * 100vw;
+                                border-radius: 100/320 * 100vw;
+                                box-shadow: 0 3/320 * 100vw 7/320 * 100vw 0 rgba(0, 0, 0, 0.26);
+                                background-image: linear-gradient(119deg, #3023ae, #c86dd7);
+        
+                                .current-vacancy-description-button-text {
+                                    font-size: 18/320 * 100vw;
+                                    font-weight: 500;
+                                    text-align: center;
+                                    color: #ffffff;
+                                }
+        
+                                &:hover {
+                                    transition: all 0.5s ease;
+                                    box-shadow: 0 2/320 * 100vw 2/320 * 100vw 0 rgba(0, 0, 0, 0.5);
+                                }
+                            }
+        
+                            .current-vacancy-description-button:active {
+                                background-image: linear-gradient(147deg, #3023ae, #c86dd7);
+                            }
+                        }
+                    }
+                }
+            }
+        
+        .how-to-contact-container {
+            margin-top: -130/320 * 100vw;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            background-color: #efeef2;
+            height: 494/320 * 100vw;
+        
+            .how-to-contact-title {
+                margin-top: 161/320 * 100vw;
+                font-family: Oswald;
+                font-size: 40/320 * 100vw;
+                font-weight: 500;
+                color: #1b1045;
+                align-self: flex-start;
+                margin-left: 15/320 * 100vw;
+            }
+        
+            .how-to-contact-like-a-job {
+                margin-top: 32/320 * 100vw;
+                width: 100%;
+                height: auto;
+                border-radius: 11/320 * 100vw;
+                box-shadow: 0 2/320 * 100vw 16/320 * 100vw 0 rgba(0, 0, 0, 0.17);
+                background-color: #ffffff;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+        
+                .how-to-contact-like-a-job-question {
+                    margin-top: 13/320 * 100vw;
+                    font-size: 20/320 * 100vw;
+                    font-weight: 500;
+                    text-align: left;
+                    color: #1b1045;
+                }
+        
+                .how-to-contact-like-a-job-feedback {
+                    margin-top: 10/320 * 100vw;
+                    font-size: 14/320 * 100vw;
+                    margin-right: 27/320 * 100vw;
+                    margin-left: 27/320 * 100vw;
+                    text-align: center;
+                    color: #1b1045;
+        
+                    .how-to-contact-like-a-job-feedbac-email {
+                        color: #9a89eb;
+                    }
+                }
+        
+                .how-to-contact-like-a-job-invitation {
+                    margin-top: 10/320 * 100vw;
+                    font-size: 13/320 * 100vw;
+                    margin-right: 27/320 * 100vw;
+                    margin-left: 27/320 * 100vw;
+                    margin-bottom: 27/320 * 100vw;
+                    color: #59546c;
+                }
+            }
+        }
+    }
+        
+    .landing-part-cont {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 740/320 * 100vw;
+        width: 100%;
+        background-image: linear-gradient(93deg, #3023ae, #c86dd7);
+        padding-top: 123/320 * 100vw;
+    
+        &::after {
+            display: none;
+        }
+    
+        .landing-part {  
+            height: auto;
+            padding-top: 123/320 * 100vw;
+            position: relative;
+            width: 100%; 
+    
+            .landing-part-container {
+                margin-top: 75/320 * 100vw;
+                width: auto;
+    
+                .landing-part-nav-text {
+                    color: #fff;
+                    font-size: 15/320 * 100vw;
+                    margin-left: 20/320 * 100vw;
+                    a {
+                        color: #ffffff; 
+                        text-decoration: underline;
+                    }
+                }
+    
+                .landing-part-title {
+                    font-size: 13vw;
+                    font-weight: bold;
+                    color: #fff;
+                    width: auto;
+                    margin-left: 20/320 * 100vw;
+                    margin-top: 15/320 * 100vw;
+                }
+    
+                .landing-part-text {
+                    color: #fff;
+                    font-size: 16/320 * 100vw;
+                    font-weight: 400;
+                    margin-left: 14/320 * 100vw;
+                    margin-right: 10/320 * 100vw;
+                    margin-top: 9/320 * 100vw;
+                    width: auto;
+                }
+            }
+        }
+    }
+}

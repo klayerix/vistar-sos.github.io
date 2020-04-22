@@ -1,0 +1,52 @@
+@gradient: linear-gradient(136deg, #3023ae, #c86dd7);
+@shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.5);
+
+.cooperation-option-choice.active {
+    background-image: @gradient;
+    box-shadow: 0 2px 2px 0 rgba(77, 77, 77, 0.32);
+
+    p {
+        transition: all 0.2s ease;
+        color: #fff !important;
+    }
+}
+
+.software-orper-tech-task-rectangle.first {
+    background-image: linear-gradient(117deg, #3023ae, #c86dd7);
+    color: #fff;
+}
+
+.how-we-work-stage-item-container {
+    width: 495px;
+    padding-left: 0px;
+    transition: all 0.5s ease;
+    border-radius: 0px 10px 10px 0px;
+
+    .how-we-work-arrow {
+        transition: all 0.5s ease;
+    }
+
+    &.active {
+        color: #fff;
+        background: linear-gradient(110deg, #3023ae, #c86dd7);
+        border-radius: 0px 10px 10px 0px;
+        transition: all 0.5s ease;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+        .how-we-work-stage-item {
+            transition: all 0.5s ease;
+            color: #fff;
+        }
+
+        .how-we-work-arrow {
+            filter: brightness(0) invert(1);
+            transition: all 0.5s ease;
+        }
+    }
+
+    &:hover {
+        .how-we-work-stage-item {
+            margin-left: 125px;
+        }
+    }
+}

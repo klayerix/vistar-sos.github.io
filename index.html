@@ -1,27 +1,605 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
+    <title>Разработка программного обеспечения на заказ – ПО для бизнеса в компании ВИСТАР</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="description" content="Разработка ПО «под ключ»: прикладные программы, мобильные и веб-приложения (Java, JavaScript, PHP). Разумные цены, гарантийное сопровождение. Работаем с 2008 года.">
+    <meta name="yandex-verification" content="34e5140ee6bd933e" />
+    <link rel="shortcut icon" href="/icon/favicon.png" />
+    <link rel="stylesheet" href="css/index/index.min.css"> 
 
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(45860811, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/45860811" style="position:absolute; left:-9999px;" alt="" />
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script defer src="https://d3js.org/d3.v5.min.js"></script>
+    <script defer src="js/min/libs/jquery-3.3.1.js"></script>
+    <script defer src="js/min/main.js"></script>
+    <script defer src="js/min/main-page.js"></script>
+    <script defer src="js/min/our-competences.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 </head>
-<body>
-    
-    <input id="log" type="text">
-    <button id="signIn">Войти</button>
-    <button id="reg">Регистрация</button>
-    <script src="script.js"></script>
-    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?167"></script>
-<script type="text/javascript">
-  VK.init({apiId: API_ID});
-</script>
 
-<!-- VK Widget -->
-<div id="vk_auth"></div>
-<script type="text/javascript">
-  VK.Widgets.Auth("vk_auth", {"onAuth":function(data) {alert('user '+data['uid']+' authorized');}});
-</script>
+<body>
+    <div class="up-button" onclick="scrollUp();">
+        <img src="img/up-button.png" alt="">
+    </div>
+    <form>
+        <div class="wrap-modal-req-call">
+            <div class="modal-req-call">
+                <span class="exit-modal-window-req-call" onclick="exitModalReqCall();">
+                    <img src="/img/exitModalWindowReqCall.png" alt="X">
+                </span>
+                <p class="modal-req-call-q">Ответим
+                    <br>в течение 1 часа</p>
+                <p class="modal-req-call-tel">Пн – Пт с 9:00 до 18:00 (по Мск)</p>
+                <div class="modal-window-reqcall-form">
+                    <input type="text" class="modal-window-reqcall-input" required>
+                    <label class="modal-window-reqcall-label">Ваш номер телефона</label>
+                </div>
+                <div class="modal-window-req-call-btn">Заказать звонок</div>
+                <div class="modal-window-req-call-success">
+                    <p>Ваша заявка принята</p>
+                    <img src="/img/index-chek-mark-succes-send.png" class="modal-window-req-call-success-img">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="desktop">
+        <header class="main-header">
+            <div class="main-header__wrap">
+                <a class="main-header__logo" href="/"></a>
+                <div class="main-header__navigation navigation navigation--single">
+                    <ul class="navigation__list">
+                        <li class="navigation__item--sub-nav">
+                                <a href="/o-kompanii">О компании</a>
+                                <ul class="navigation__sub-nav">
+                                    <li class="navigation__item">
+                                            <a href="/o-kompanii/kontakty">Контакты</a>                            
+                                        </li>
+                                        <li class="navigation__item">
+                                            <a href="/o-kompanii/vacansii">Вакансии</a>
+                                    </li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-header__navigation navigation navigation--tablet-single">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                                <a href="/o-kompanii">О компании</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="/o-kompanii/kontakty">Контакты</a>                            
+                        </li>
+                        <li class="navigation__item">
+                            <a href="/o-kompanii/vacansii">Вакансии</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navigation__contact-information contact-information">
+                        <li class="contact-information__email">info@vistar.su</li>
+                        <li class="contact-information__phone">+7 951 551 7000</li>
+                        <li class="contact-information__feedback" onclick="showModalReqCall();">Заказать звонок</li>
+                </ul>
+            </div>
+            <div class="navigation">
+                <div class="navigation__toggle"></div>
+                <ul class="navigation__list js-navigation">
+                    <li class="navigation__item">
+                        <a href="/">ПО на заказ</a>
+                    </li>
+                    <li class="navigation__item">
+                            <a href="/mobilnaya-razrabotka">Мобильные приложения</a>
+                            <ul class="navigation__sub-nav"></ul>
+                    </li>
+                    <li class="navigation__item navigation__item--sub-nav">
+                            <a href="/web-razrabotka">Веб-разработка</a>
+                            <ul class="navigation__sub-nav">
+                                <li class="navigation__item">
+                                    <a href="/web-razrabotka/sajty-na-zakaz">Разработка сайтов</a>
+                                </li>
+                            </ul>
+                    </li>
+                    <li class="navigation__item navigation__item--tablet">
+                        <a href="/web-razrabotka/sajty-na-zakaz">Разработка сайтов</a>
+                    </li>
+                    <li class="navigation__item">
+                            <a href="/autsorsing">Аутсорсинг</a>
+                    </li>
+                    <li class="navigation__item navigation__item--mobile">
+                        <a href="/o-kompanii">О компании</a>
+                    </li>
+                    <li class="navigation__item navigation__item--mobile">
+                        <a href="/o-kompanii/kontakty">Контакты</a>                            
+                    </li>
+                    <li class="navigation__item navigation__item--mobile">
+                        <a href="/o-kompanii/vacansii">Вакансии</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="landing-part-cont">
+            <div class="background-video" id="background-video">
+                <video width="100%" autoplay="autoplay" loop="loop" max-height="1000px">
+                    <source src="video/vid_1.mp4"></source>
+                </video>
+            </div>
+            <div class="landing-part">
+                <div class="landing-part-container">
+                    <h1 class="landing-part-title">Разработка программного обеспечения</h1>
+                    <p class="landing-part-text">
+                        С 2008 года мы создаём программное обеспечение на заказ для бизнеса России и Европы. Опыт и компетенции
+                        разработчиков компании обеспечивают
+                        эффективность решений, сочетающих индивидуальный подход, высокое качество и оптимальную цену.</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-us-cont">
+                <div class="about-us-circles">
+                        <div class="landing-part-circle-top">
+                            <div class="landing-part-circle">
+                                <div class="landing-part-circle-title">100+</div>
+                                <p>завершенных бизнес-проектов</p>
+                            </div>
+                            <div class="landing-part-circle">
+                                <div class="landing-part-circle-title">70%</div>
+                                <p>разработчиков - senior и middle</p>
+                            </div>
+                        </div>
+                        <div class="landing-part-circle-down">
+                            <div class="landing-part-circle">
+                                <div class="landing-part-circle-title">
+                                    <div>
+                                       <span class = "small">от </span> <!-- 
+                                         --><span class="landing-part-circle-title-span">1000</span><!-- 
+                                        --><span class = "small"> руб.</span>
+                                    </div>
+                                </div>
+                                <p>стоимость часа разработчика</p>
+                            </div>
+                            <div class="landing-part-circle">
+                                <div class="landing-part-circle-title">3</div>
+                                <p>модели оплаты</p>
+                            </div>
+                        </div>
+                    </div>
+            <div class="about-us">
+                <p class="about-us-text">Ключевые услуги «ВИСТАР»: разработка и сопровождение прикладного ПО, мобильных приложений, веб-приложений.
+                    Многие решения становятся эффективнее, когда реализуются в связке этих направлений.</p>
+            </div>
+        </div>
+        <div class="software-order-part-cont">
+            <div class="software-order-part">
+                <h2 class="software-order-titel">Как заказать ПО</h2>
+                <h3 class="software-order-choice">Выберите вариант сотрудничества:</h3>
+                <ul class="cooperation-option-choice-container">
+                    <li class="cooperation-option-choice active first" onclick="setActiveCoop(1)">
+                        <p class="cooperation-option-choice-title">Полный цикл разработки</p>
+                        <p class="cooperation-option-choice-text">Комплекс работ от анализа задач до внедрения ПО проводится специалистами нашей компании</p>
+                        <div class="cooperation-option-choice-circle1">
+                            <img src="img/our-offers-check-mark.png" alt="" class="cooperation-option-choice-circle-checkmark">
+                        </div>
+                    </li>
+                    <li class="cooperation-option-choice second" onclick="setActiveCoop(2)">
+                        <p class="cooperation-option-choice-title">Ограниченное участие в вашем проекте</p>
+                        <p class="cooperation-option-choice-text">Например, создание некоторых программных модулей</p>
+                        <div class="cooperation-option-choice-circle2">
+                            <img src="img/our-offers-check-mark.png" alt="" class="cooperation-option-choice-circle-checkmark">
+                        </div>
+                    </li>
+                    <li class="cooperation-option-choice third" onclick="setActiveCoop(3)">
+                        <p class="cooperation-option-choice-title">Доработка</p>
+                        <p class="cooperation-option-choice-text">Модификация, миграция ПО, разработанного нами или сторонними исполнителями</p>
+                        <div class="cooperation-option-choice-circle3">
+                            <img src="img/our-offers-check-mark.png" alt="" class="cooperation-option-choice-circle-checkmark">
+                        </div>
+                    </li>
+                </ul>
+                <h3 class="software-order-choice">Расскажите нам о задачах</h3>
+                <div class="soc-wrap">
+                    <p class="soc-checkbox-question">У вас есть готовое техническое задание?</p>
+                    <div class="checkbox-container">
+                        <div class="checkbox-word-no" onclick="checkFirst();">Нет</div>
+                        <span class="toggle-bg" onclick="check();">
+                            <input type="radio" name="toggle" value="off" class="checkbox-off" id="checkbox-off">
+                            <input type="radio" name="toggle" value="on" class="checkbox-on" id="checkbox-on">
+                            <span class="switch"></span>
+                        </span>
+                        <div class="checkbox-word-yes" onclick="checkSecond();">Да</div>
+                    </div>
+                </div>
+                <div class="software-orper-tech-task-container">
+                    <div class="software-orper-tech-task-rectangle first" onclick="checkFirst();">Расскажите о бизнес-целях или проблемах, которые нужно решить. Мы проведем анализ задачи и составим ТЗ.</div>
+                    <div class="software-orper-tech-task-rectangle second" onclick="checkSecond();">Отлично, уточним детали и приступим к проектированию.</div>
+                </div>
+            </div>
+        </div>
+        <div class="software-order-a-consultation-cont">
+            <div class="software-order-a-consultation">
+                <div class="software-order-a-consultation-titel">Закажите бесплатную консультацию в удобное для вас время</div>
+                <div class="software-order-discuss-the-project-button" onclick="showModalReqCall(true);">Обсудить проект</div>
+            </div>
+        </div>
+        <div class="our-prices-part-cont">
+            <div class="our-prices-part">
+                <div class="our-prices-cont-first">
+                    <h2 class="our-prices-title">Наши цены</h2>
+                    <p class="our-prices-text">Каждая задача индивидуальна, а стоимость ПО зависит от многих факторов. Поэтому примерный бюджет мы назовём
+                        только после обсуждения деталей.
+                    </p>
+                </div>
+                <div class="our-prices-cont-two">
+                    <p class="our-prices-subtitle">Уровень цен</p>
+                    <p class="our-prices-text-20">1 час работы программиста</p>
+                    <ul>
+                        <li class="our-prices-text-20">senior – 1600 руб.</li>
+                        <li class="our-prices-text-20">middle – 1400 руб.</li>
+                        <li class="our-prices-text-20">junior – 1000 руб.</li>
+                    </ul>
+                    <p class="our-prices-text-20">Минимальная стоимость разработки</p>
+                    <ul>
+                        <li class="our-prices-text-20">от 200 000 руб.</li>
+                    </ul>
+                    <p class="our-prices-text-20">Составление ТЗ</p>
+                    <ul>
+                        <li class="our-prices-text-20">10-20 % от общей суммы</li>
+                    </ul>
+                </div>
+                <ul class="our-prices-cont-three">
+                    <li class="our-prices-subtitle">Модели оплаты</li>
+                    <li class="our-prices-text-20 our-prices-li">
+                        <div class="our-prices-block-cont">
+                            <div>Фиксированная</div>
+                            <img src="img/hint.png" alt="" class="our-prices-hint" onclick="openHintWindowFix();">
+                            <div class="hint-window-container-fix">
+                                <div class="hint-window-exit-button-fix">
+                                    <div class="our-prices-hint-exit" onclick="exitHintWindowFix();">
+                                        <img src="/img/x.png">
+                                    </div>
+                                </div>
+                                    <p>Fixed Price</p>
+                                    <ul>
+                                        <li>1. Бюджет и объём работы определены в договоре.</li>
+                                        <li>2. Строгое соблюдение ТЗ.</li>
+                                        <li>3. Изменения по проекту = пересмотр договора.</li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <p class="our-prices-text-shadow">Fixed price</p>
+                    </li>
+                    <li class="our-prices-text-20 our-prices-li">
+                        <div class="our-prices-block-cont">
+                            <div>Почасовая</div>
+                            <img src="img/hint.png" alt="" class="our-prices-hint" onclick="openHintWindowHour();">
+                            <div class="hint-window-container-hour">
+                                <div class="hint-window-exit-button-hour">
+                                    <div class="our-prices-hint-exit" onclick="exitHintWindowHour();">
+                                        <img src="/img/x.png">
+                                    </div>
+                                </div>
+                                    <p>Time & Materials</p>
+                                    <ul>
+                                        <li>1. Расчёт бюджета: затраты времени на выполнение работы (в часах) умножаем на цену
+                                            часа разработчика.</li>
+                                        <li>2. Изменения можно вносить на любом этапе. При этом бюджет увеличивается. </li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <p class="our-prices-text-shadow">Time & Material</p>
+                    </li>
+                    <li class="our-prices-text-20 our-prices-li">
+                        <div class="our-prices-block-cont">
+                            <div>Выделенная команда</div>
+                            <img src="img/hint.png" alt="" class="our-prices-hint" onclick="openHintWindowDed();">
+                            <div class="hint-window-container-ded">
+                                <div class="hint-window-exit-button-ded">
+                                    <div class="our-prices-hint-exit" onclick="exitHintWindowDed();">
+                                        <img src="/img/x.png">
+                                    </div>
+                                </div>
+                                    <p>Dedicated Team</p>
+                                    <ul>
+                                        <li>1. Договариваемся, сколько человек требуется и на какой срок.</li>
+                                        <li>2. Вы выбираете исполнителей.</li>
+                                        <li>3. Они работают в нашем офисе, но под вашим руководством.</li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <p class="our-prices-text-shadow">Dedicated Team</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="software-development-to-order-container-cont">
+            <div class="software-development-to-order-container">
+                <h2 class="software-development-to-order-titel">Разработка ПО
+                    <span>на заказ «под ключ»</span></h2>
+                <p class="software-development-to-order-stages">Процесс разработки программного обеспечения в компании «Вистар» включает три основных этапа:</p>
+            </div>
+        </div>
+        <div class="software-development-to-order-rectangles-container">
+            <div class="software-development-to-order-rectangles-cont">
+                <div class="software-development-to-order-rectangle-background b1">
+                    <div class="software-development-to-order-rectangle r1">Выбор стратегии</div>
+                </div>
+                <div class="software-development-to-order-rectangle-background b2">
+                    <div class="software-development-to-order-rectangle r2">Программирование</div>
+                </div>
+                <div class="software-development-to-order-rectangle-background b3">
+                    <div class="software-development-to-order-rectangle r3">
+                        <span>Передача заказчику</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="software-development-to-order-container-cont">
+            <div class="software-development-to-order-container">
+                <p class="software-development-to-order-desc">На первом этапе мы предложим вам оптимальный вариант модели работы. Учтём сложность и размер проекта, сферы
+                    применения программ, объём финансирования.</p>
+            </div>
+        </div>
+        <div class="how-we-work-container-cont">
+            <div class="how-we-work-container">
+                <h3 class="how-we-work-titel">Как мы работаем: процессы и результаты</h3>
+
+                <p class="how-we-work-stages-titel"><span>В рамках любой модели реализуются типовые стадии</span>
+                    (их число, очерёдность, длительность определяются выбранной моделью):</p>
+
+                <div class="how-we-work-about-container">
+                    <ul class="how-we-work-stages">
+                        <div class="how-we-work-stage-item-container active" onclick="setActiveHowWeWorkItem(0);">
+                            <li class="how-we-work-stage-item">Определение и анализ требований</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+                        </div>
+                        <div class="how-we-work-stage-item-container" onclick="setActiveHowWeWorkItem(1);">
+                            <li class="how-we-work-stage-item">Проектирование ПО</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+                        </div>
+                        <div class="how-we-work-stage-item-container" onclick="setActiveHowWeWorkItem(2);">
+                            <li class="how-we-work-stage-item">Создание кода</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+                        </div>
+                        <div class="how-we-work-stage-item-container" onclick="setActiveHowWeWorkItem(3);">
+                            <li class="how-we-work-stage-item">Тестирование</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+                        </div>
+                        <div class="how-we-work-stage-item-container" onclick="setActiveHowWeWorkItem(4);">
+                            <li class="how-we-work-stage-item">Приемка, внедрение ПО</li>
+                            <img src="img/how-we-work-right-arrow.png" alt="" class="how-we-work-arrow">
+
+                        </div>
+                    </ul>
+                    <div class="how-we-work-about-panel-container">
+                        <div class="how-we-work-about-panel">
+                                <div class="how-we-work-item-obout">
+                                        <p>Требования – это путеводная звезда, которая задаёт направление на всём протяжении разработки
+                                            и позволяет остановиться, когда цели достигнуты.</p>
+                                        <p>Результат – систематизированное представление о будущем продукте:</p>
+                                            <ul>
+                                                <li>характеристики, условия использования, ограничения;</li>
+                                                <li>потребности (явные и неявные), пожелания, ожидания всех заинтересованных
+                                                    участников (заказчика, конечных пользователей, разработчиков
+                                                    и других);</li>
+                                                <li>спецификации. </li>
+                                            </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <template id="stages">
+                    <div class="how-we-work-item-obout t0 active">
+                            <p>Требования – это путеводная звезда, которая задаёт направление на всём протяжении разработки
+                                    и позволяет остановиться, когда цели достигнуты.</p>
+                            <p>Результат – систематизированное представление о будущем продукте:</p>
+                            <ul>
+                                <li>характеристики, условия использования, ограничения;</li>
+                                <li>потребности (явные и неявные), пожелания, ожидания всех заинтересованных
+                                    участников (заказчика, конечных пользователей, разработчиков
+                                    и других);</li>
+                                <li>спецификации. </li>
+                            </ul>
+                    </div>
+                    <div class="how-we-work-item-obout t1 active">
+                        <p><span>Архитектура</span>
+                            Из пункта Н (начало работы) в пункт У (успешное завершение) можно попасть разными путями.
+                            Проектирование архитектуры - это создание оптимального маршрута, стратегическое планирование
+                            движения. Кроме того, именно этот этап определяет технологическое качество будущего программного
+                            обеспечения.</p>
+
+                        <span>Результаты:</span>
+                            <ul>
+                                <li>структурная модель ПО с описанием компонентов, интерфейсов и связей
+                                    между ними;</li>
+                                <li>требования, распределённые по элементам модели;</li>
+                                <li>прототипы (утверждаются заказчиком). </li>
+                            </ul>
+                        <span>Детальное проектирование</span>
+                        <p>Разработка проектов для каждого элемента ПО, выделенного на предыдущем этапе, вплоть до частей
+                            этих элементов - программных блоков. Распределение требований по блокам.<br>
+                            Результат – спецификации для программистов.</p>
+
+                    </div>
+                    <div class="how-we-work-item-obout t2 active">
+                            <p>Пишем код для программных блоков, документируем его. Рисуем пользовательские интерфейсы. Собираем
+                                элементы в систему, отвечающую заданным требованиям.</p>
+                            <p>Результат – готовое ПО с пакетом документации (виды документов устанавливаются в договоре).</p>
+                    </div>
+                    <div class="how-we-work-item-obout t3 active">
+                            <p>Проводится на стадиях реализации, интеграции и в процессе приёмки. На завершающей стадии проходит
+                                квалификационное тестирование: представителю организации-заказчика демонстрируем работоспособность
+                                ПО и соответствие заданным требованиям.</p>
+                    </div>
+                    <div class="how-we-work-item-obout t4 active">
+                            <p>В соответствии с договором мы передаём вам документацию и готовые программы (или устанавливаем
+                                на вашей площадке). При необходимости обучаем персонал.</p>
+                    </div>
+                </template>
+            </div>
+        </div>
+
+        <div class="on-concluding-container-cont">
+            <div class="on-concluding-container">
+                <img src="img/test-sphere.png" alt="" class="on-concluding-list-sphere">
+
+                <div class="on-concluding-titel">По завершении разработки вы получаете 
+                    действующий программный продукт</div>
+                <div class="on-concluding-list-container">
+                    <ul class="on-concluding-list">
+                        <div class="on-conc-li-cont">
+                            <img src="img/on-concluding-check-mark.png" alt="">    
+                            <li class="on-concluding-list-item">Решение бизнес-задач</li>
+                        </div>
+
+                        <div class="on-conc-li-cont">
+                            <img src="img/on-concluding-check-mark.png" alt="">    
+                            <li class="on-concluding-list-item">Удобный интерфейс</li>
+                        </div>
+
+                        <div class="on-conc-li-cont">
+                            <img src="img/on-concluding-check-mark.png" alt="">    
+                            <li class="on-concluding-list-item">Необходимая документация</li>
+                        </div>
+
+                        <div class="on-conc-li-cont">
+                            <img src="img/on-concluding-check-mark.png" alt="">    
+                            <li class="on-concluding-list-item">Гарантийное сопровождение</li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="order-software-button">
+                    <div class="order-software-button-text" onclick="showModalReqCall(true);">Заказать ПО</div>
+                </div>
+            </div>
+        </div>
+        <div class="quality-control-and-timing-container-cont">
+            <div class="quality-control-and-timing-container">
+                <div class="quality-control-and-timing-left">
+                    <h3>Контроль качества и сроков</h3>
+
+                    <p>Высокий уровень результата и соблюдение сроков обеспечиваются отлаженными процедурами управления. Вы
+                        можете контролировать процесс так, как вам удобно. Обычные варианты: 1 раз в месяц или по выделенным
+                        этапам. </p>
+                </div>
+                <div class="quality-control-and-timing-right">
+
+                    <p class="quality-control-and-timing-right-titel">Мы заботимся о качестве программного обеспечения на всех этапах его создания, используя систему критериев:</p>
+
+                    <div class="qc-ul-container">
+                        <ul class="qc-criteria-list-one">
+                            <li class="qc-criteria-item">Удовлетворение потребностей пользователей</li>
+
+                            <li class="qc-criteria-item">Функциональность</li>
+
+                            <li class="qc-criteria-item">Надежность</li>
+
+                            <li class="qc-criteria-item">Производительность</li>
+
+                            <li class="qc-criteria-item">Эффективность</li>
+                        </ul>
+                        <ul class="qc-criteria-list-two">
+                            <li class="qc-criteria-item">Удобство использования</li>
+
+                            <li class="qc-criteria-item">Совместимость</li>
+
+                            <li class="qc-criteria-item">Защищенность</li>
+
+                            <li class="qc-criteria-item">Сопровождаемость</li>
+
+                            <li class="qc-criteria-item">Переносимость</li>
+                        </ul>
+                    </div>
+                    <p class="qc-ul-container-mobile">Высокий уровень результата и соблюдение сроков обеспечиваются отлаженными процедурами управления. Вы
+                        можете контролировать процесс так, как вам удобно. Обычные варианты: 1 раз в месяц или по выделенным
+                        этапам. </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="our-competences-container-cont">
+            <div class="our-competences-container">
+                <h2>Наши компетенции</h2>
+
+                <div class="our-competences-list-container"></div>
+
+                <div class="our-competences-desc">В качестве базового ПО мы используем свободный софт (если иное не оговорено дополнительно). Выгоды для заказчика
+                    очевидны:
+                </div>
+
+                <div class="our-competences-rectangles-container">
+                    <div class="our-competences-rectangle-item-container">
+                        <div class="our-competences-rectangle">
+                            <img src="img/money.png" alt="">
+                        </div>
+                        <p>снижение цены
+                            (вы платите только за нашу работу)</p>
+                    </div>
+                    <div class="our-competences-rectangle-item-container">
+                        <div class="our-competences-rectangle">
+                            <img src="img/infinity.png" alt="">
+                        </div>
+                        <p>бессрочное бесплатное использование
+                            всех компонентов ПО после его приобретения</p>
+                    </div>
+                    <div class="our-competences-rectangle-item-container">
+                        <div class="our-competences-rectangle">
+                            <img src="img/rocket.png" alt="">
+                        </div>
+                        <p>вы избавлены от рисков,
+                            связанных с проприетарным ПО</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-top">
+                    <div class="footer-top-left">
+                        <p class="footer-top-left-job">Мы работаем с 9:00 до 18:00 по московскому времени (понедельник-пятница)</p>
+                        <p class="footer-top-left-phone">Телефон</p>
+                        <p class="footer-top-left-number">8 951 551 70 00</p>
+                        <p class="footer-top-left-order" onclick="showModalReqCall(true);">Заказать звонок</p>
+                    </div>
+                    <div class="footer-top-right">
+                        <p class="footer-top-right-watsapp">WhatsApp</p>
+                        <p class="footer-top-right-number">+7 951 551 60 00</p>
+                        <p class="footer-top-right-telegramm">+7 951 551 60 00</p>
+                        <p class="footer-top-right-name">@GennadyPonomarev</p>
+                        <p class="footer-top-right-e-mail">E-mail</p>
+                        <p class="footer-top-right-e-mail-info">info@vistar.su</p>
+                    </div>
+                </div>
+                <div class="footer-down">
+                    <p class="footer-down-all-materials">Все материалы сайта принадлежат ООО «ВИСТАР». При использовании любой части контента необходимо указать
+                        источник.
+                    </p>
+                    <p class="footer-down-copyright">© ООО "Вистар", 2009-2019</p>
+                </div>
+            </div>
+        </div>
 </body>
+
 </html>
